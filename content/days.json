@@ -937,46 +937,45 @@
                                      "Keep a personal toolkit of 8â€“10 tools you master instead of trying to use everything"
                                  ]
                  },
-                 {
-                     "id":  "day13",
-                     "dayNum":  "u0661u0663",
-                     "emoji":  "ud83dudd06",
-                     "c1":  "#0ea5e9",
-                     "c2":  "#8b5cf6",
-                     "date":  "4 u064au0648u0646u064au0648 2026",
-                     "siteKeys":  [
-
-                                  ],
-                     "day_ar":  "u0627u0644u064au0648u0645 u0627u0644u062bu0627u0644u062b u0639u0634u0631",
-                     "title_ar":  "u062cu0644u0633u0629 u0625u0636u0627u0641u064au0629 u2014 u0642u064au062f u0627u0644u062au062du062fu064au062b",
-                     "subtitle_ar":  "u0627u0644u0645u062du062au0648u0649 u0642u064au062f u0627u0644u0625u0636u0627u0641u0629",
-                     "readTime_ar":  "15 u062fu0642u064au0642u0629",
-                     "overview_ar":  "u0645u062du062au0648u0649 u0647u0630u0627 u0627u0644u064au0648u0645 u0642u064au062f u0627u0644u0625u0636u0627u0641u0629. u064au0631u062cu0649 u062au062du062fu064au062bu0647 u0639u0628u0631 u0644u0648u062du0629 CMS.",
-                     "pdfSummary_ar":  "u064au0631u062cu0649 u062au062du062fu064au062b u0645u0644u062eu0635 u0647u0630u0627 u0627u0644u064au0648u0645 u0639u0628u0631 u0644u0648u062du0629 CMS.",
-                     "points_ar":  [
-                                       "u0645u062du062au0648u0649 u0642u064au062f u0627u0644u0625u0636u0627u0641u0629"
-                                   ],
-                     "takeaways_ar":  [
-                                          "u0645u062du062au0648u0649 u0642u064au062f u0627u0644u0625u0636u0627u0641u0629"
-                                      ],
-                     "tips_ar":  [
-                                     "u064au0645u0643u0646 u062au062du062fu064au062b u0645u062du062au0648u0649 u0647u0630u0627 u0627u0644u064au0648u0645 u0639u0628u0631 u0644u0648u062du0629 CMS"
-                                 ],
-                     "day_en":  "Day 13",
-                     "title_en":  "Additional Session - Content Pending",
-                     "subtitle_en":  "Content being added",
-                     "readTime_en":  "15 min",
-                     "overview_en":  "Content for this day is being added. Please update via the CMS panel.",
-                     "pdfSummary_en":  "Please update this day summary via the CMS panel.",
-                     "points_en":  [
-                                       "Day 13 content pending - please update via CMS"
-                                   ],
-                     "takeaways_en":  [
-                                          "Content pending"
-                                      ],
-                     "tips_en":  [
-                                     "All Day 13 content can be updated via the Decap CMS admin panel"
-                                 ]
-                 }
-             ]
+    {
+      "id": "day13",
+      "dayNum": "١٣",
+      "emoji": "🔬",
+      "c1": "#0ea5e9",
+      "c2": "#8b5cf6",
+      "date": "4 يونيو 2026",
+      "siteKeys": [],
+      "day_ar": "اليوم الثالث عشر",
+      "title_ar": "الأدوات العلمية والتعاون البرمجي",
+      "subtitle_ar": "أدوات البحث العلمي · التعاون البرمجي · الذكاء الاصطناعي في البحث",
+      "readTime_ar": "15 دقيقة",
+      "overview_ar": "يتناول اليوم الثالث عشر الأدوات العلمية المتخصصة ومنصات التعاون البرمجي. يُرجى تحديث المحتوى التفصيلي عبر لوحة CMS.",
+      "pdfSummary_ar": "يُرجى تحديث ملخص هذا اليوم عبر لوحة CMS.",
+      "points_ar": [
+        "الأدوات العلمية والتعاون البرمجي — المحتوى قيد الإضافة"
+      ],
+      "takeaways_ar": [
+        "محتوى قيد الإضافة — يُرجى التحديث عبر لوحة CMS"
+      ],
+      "tips_ar": [
+        "يمكن تحديث محتوى هذا اليوم كاملاً عبر لوحة إدارة المحتوى (Decap CMS)"
+      ],
+      "day_en": "Day 13",
+      "title_en": "Scientific Tools & Programming Collaboration",
+      "subtitle_en": "Academic Research Tools · Programming Collaboration · AI in Research",
+      "readTime_en": "15 min",
+      "overview_en": "Day 13 covers specialised scientific tools and programming collaboration platforms. Please update the detailed content via the CMS panel.",
+      "pdfSummary_en": "Please update this day summary via the CMS panel.",
+      "points_en": [
+        "Scientific tools and programming collaboration — content pending"
+      ],
+      "takeaways_en": [
+        "Content pending — please update via the CMS panel"
+      ],
+      "tips_en": [
+        "All Day 13 content can be updated via the Decap CMS admin panel without touching the code"
+      ]
+    }
+  ]
 }
+
