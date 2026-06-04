@@ -11,6 +11,7 @@
     { "dayId": "day9",  "dayLabel": "اليوم التاسع",       "videos": [] },
     { "dayId": "day10", "dayLabel": "اليوم العاشر",       "videos": [] },
     { "dayId": "day11", "dayLabel": "اليوم الحادي عشر",   "videos": [] },
-    { "dayId": "day12", "dayLabel": "اليوم الثاني عشر",   "videos": [] }
+    { "dayId": "day12", "dayLabel": "اليوم الثاني عشر",   "videos": [] },
+    { "dayId": "day13", "dayLabel": "اليوم الثالث عشر",   "videos": [] }
   ]
 }
