@@ -1,17 +1,163 @@
 {
   "days": [
-    { "dayId": "day1",  "dayLabel": "اليوم الأول",        "videos": [] },
-    { "dayId": "day2",  "dayLabel": "اليوم الثاني",       "videos": [] },
-    { "dayId": "day3",  "dayLabel": "اليوم الثالث",       "videos": [] },
-    { "dayId": "day4",  "dayLabel": "اليوم الرابع",       "videos": [] },
-    { "dayId": "day5",  "dayLabel": "اليوم الخامس",       "videos": [] },
-    { "dayId": "day6",  "dayLabel": "اليوم السادس",       "videos": [] },
-    { "dayId": "day7",  "dayLabel": "اليوم السابع",       "videos": [] },
-    { "dayId": "day8",  "dayLabel": "اليوم الثامن",       "videos": [] },
-    { "dayId": "day9",  "dayLabel": "اليوم التاسع",       "videos": [] },
-    { "dayId": "day10", "dayLabel": "اليوم العاشر",       "videos": [] },
-    { "dayId": "day11", "dayLabel": "اليوم الحادي عشر",   "videos": [] },
-    { "dayId": "day12", "dayLabel": "اليوم الثاني عشر",   "videos": [] },
-    { "dayId": "day13", "dayLabel": "اليوم الثالث عشر",   "videos": [] }
+    {
+      "dayId": "day1",
+      "dayLabel": "اليوم الأول",
+      "videos": [
+        { "part": "الجزء الأول",   "title": "اليوم الأول — الجزء الأول",   "duration": "00:00", "topic": "مقدمة في أدوات الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/194" },
+        { "part": "الجزء الثاني",  "title": "اليوم الأول — الجزء الثاني",  "duration": "00:00", "topic": "مقدمة في أدوات الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/195" },
+        { "part": "الجزء الثالث", "title": "اليوم الأول — الجزء الثالث", "duration": "00:00", "topic": "مقدمة في أدوات الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/203" },
+        { "part": "الجزء الرابع",  "title": "اليوم الأول — الجزء الرابع",  "duration": "00:00", "topic": "مقدمة في أدوات الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/205" },
+        { "part": "الجزء الخامس", "title": "اليوم الأول — الجزء الخامس", "duration": "00:00", "topic": "مقدمة في أدوات الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/206" }
+      ]
+    },
+    {
+      "dayId": "day2",
+      "dayLabel": "اليوم الثاني",
+      "videos": [
+        { "part": "الجزء الأول",   "title": "اليوم الثاني — الجزء الأول",   "duration": "00:00", "topic": "التعمق في أدوات الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/258" },
+        { "part": "الجزء الثاني",  "title": "اليوم الثاني — الجزء الثاني",  "duration": "00:00", "topic": "التعمق في أدوات الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/263" },
+        { "part": "الجزء الثالث", "title": "اليوم الثاني — الجزء الثالث", "duration": "00:00", "topic": "التعمق في أدوات الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/262" },
+        { "part": "الجزء الرابع",  "title": "اليوم الثاني — الجزء الرابع",  "duration": "00:00", "topic": "التعمق في أدوات الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/266" },
+        { "part": "الجزء الخامس", "title": "اليوم الثاني — الجزء الخامس", "duration": "00:00", "topic": "التعمق في أدوات الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/268" },
+        { "part": "الجزء السادس", "title": "اليوم الثاني — الجزء السادس", "duration": "00:00", "topic": "التعمق في أدوات الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/270" },
+        { "part": "الجزء السابع",  "title": "اليوم الثاني — الجزء السابع",  "duration": "00:00", "topic": "التعمق في أدوات الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/272" }
+      ]
+    },
+    {
+      "dayId": "day3",
+      "dayLabel": "اليوم الثالث",
+      "videos": [
+        { "part": "الجزء الأول",   "title": "اليوم الثالث — الجزء الأول",   "duration": "00:00", "topic": "GPTs مخصصة وأدوات البحث العلمي", "link": "https://t.me/c/3968982450/297" },
+        { "part": "الجزء الثاني",  "title": "اليوم الثالث — الجزء الثاني",  "duration": "00:00", "topic": "GPTs مخصصة وأدوات البحث العلمي", "link": "https://t.me/c/3968982450/301" },
+        { "part": "الجزء الثالث", "title": "اليوم الثالث — الجزء الثالث", "duration": "00:00", "topic": "GPTs مخصصة وأدوات البحث العلمي", "link": "https://t.me/c/3968982450/304" },
+        { "part": "الجزء الرابع",  "title": "اليوم الثالث — الجزء الرابع",  "duration": "00:00", "topic": "GPTs مخصصة وأدوات البحث العلمي", "link": "https://t.me/c/3968982450/306" }
+      ]
+    },
+    {
+      "dayId": "day4",
+      "dayLabel": "اليوم الرابع",
+      "videos": [
+        { "part": "الجزء الأول",   "title": "اليوم الرابع — الجزء الأول",   "duration": "00:00", "topic": "تعلم اللغة والـ Vibe Coding والأتمتة", "link": "https://t.me/c/3968982450/317" },
+        { "part": "الجزء الثاني",  "title": "اليوم الرابع — الجزء الثاني",  "duration": "00:00", "topic": "تعلم اللغة والـ Vibe Coding والأتمتة", "link": "https://t.me/c/3968982450/319" },
+        { "part": "الجزء الثالث", "title": "اليوم الرابع — الجزء الثالث", "duration": "00:00", "topic": "تعلم اللغة والـ Vibe Coding والأتمتة", "link": "https://t.me/c/3968982450/321" },
+        { "part": "الجزء الرابع",  "title": "اليوم الرابع — الجزء الرابع",  "duration": "00:00", "topic": "تعلم اللغة والـ Vibe Coding والأتمتة", "link": "https://t.me/c/3968982450/346" },
+        { "part": "الجزء الخامس", "title": "اليوم الرابع — الجزء الخامس", "duration": "00:00", "topic": "تعلم اللغة والـ Vibe Coding والأتمتة", "link": "https://t.me/c/3968982450/329" },
+        { "part": "الجزء السادس", "title": "اليوم الرابع — الجزء السادس", "duration": "00:00", "topic": "تعلم اللغة والـ Vibe Coding والأتمتة", "link": "https://t.me/c/3968982450/332" },
+        { "part": "الجزء السابع",  "title": "اليوم الرابع — الجزء السابع",  "duration": "00:00", "topic": "تعلم اللغة والـ Vibe Coding والأتمتة", "link": "https://t.me/c/3968982450/333" },
+        { "part": "الجزء الثامن", "title": "اليوم الرابع — الجزء الثامن", "duration": "00:00", "topic": "تعلم اللغة والـ Vibe Coding والأتمتة", "link": "https://t.me/c/3968982450/334" },
+        { "part": "الجزء التاسع", "title": "اليوم الرابع — الجزء التاسع", "duration": "00:00", "topic": "تعلم اللغة والـ Vibe Coding والأتمتة", "link": "https://t.me/c/3968982450/338" }
+      ]
+    },
+    {
+      "dayId": "day5",
+      "dayLabel": "اليوم الخامس",
+      "videos": [
+        { "part": "الجزء الأول",   "title": "اليوم الخامس — الجزء الأول",   "duration": "00:00", "topic": "الإبداع والترجمة ووكلاء الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/360" },
+        { "part": "الجزء الثاني",  "title": "اليوم الخامس — الجزء الثاني",  "duration": "00:00", "topic": "الإبداع والترجمة ووكلاء الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/364" },
+        { "part": "الجزء الثالث", "title": "اليوم الخامس — الجزء الثالث", "duration": "00:00", "topic": "الإبداع والترجمة ووكلاء الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/365" },
+        { "part": "الجزء الرابع",  "title": "اليوم الخامس — الجزء الرابع",  "duration": "00:00", "topic": "الإبداع والترجمة ووكلاء الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/366" },
+        { "part": "الجزء الخامس", "title": "اليوم الخامس — الجزء الخامس", "duration": "00:00", "topic": "الإبداع والترجمة ووكلاء الذكاء الاصطناعي", "link": "https://t.me/c/3968982450/370" }
+      ]
+    },
+    {
+      "dayId": "day6",
+      "dayLabel": "اليوم السادس",
+      "videos": [
+        { "part": "الجزء الأول",   "title": "اليوم السادس — الجزء الأول",   "duration": "00:00", "topic": "وكلاء البحث العلمي ومنصة Claude", "link": "https://t.me/c/3968982450/379" },
+        { "part": "الجزء الثاني",  "title": "اليوم السادس — الجزء الثاني",  "duration": "00:00", "topic": "وكلاء البحث العلمي ومنصة Claude", "link": "https://t.me/c/3968982450/381" },
+        { "part": "الجزء الثالث", "title": "اليوم السادس — الجزء الثالث", "duration": "00:00", "topic": "وكلاء البحث العلمي ومنصة Claude", "link": "https://t.me/c/3968982450/390" },
+        { "part": "الجزء الرابع",  "title": "اليوم السادس — الجزء الرابع",  "duration": "00:00", "topic": "وكلاء البحث العلمي ومنصة Claude", "link": "https://t.me/c/3968982450/392" },
+        { "part": "الجزء الخامس", "title": "اليوم السادس — الجزء الخامس", "duration": "00:00", "topic": "وكلاء البحث العلمي ومنصة Claude", "link": "https://t.me/c/3968982450/394" }
+      ]
+    },
+    {
+      "dayId": "day7",
+      "dayLabel": "اليوم السابع",
+      "videos": [
+        { "part": "الجزء الأول",   "title": "اليوم السابع — الجزء الأول",   "duration": "00:00", "topic": "NotebookLM المتقدم وChatGPT Projects وClaude Desktop", "link": "https://t.me/c/3968982450/412" },
+        { "part": "الجزء الثاني",  "title": "اليوم السابع — الجزء الثاني",  "duration": "00:00", "topic": "NotebookLM المتقدم وChatGPT Projects وClaude Desktop", "link": "https://t.me/c/3968982450/414" },
+        { "part": "الجزء الثالث", "title": "اليوم السابع — الجزء الثالث", "duration": "00:00", "topic": "NotebookLM المتقدم وChatGPT Projects وClaude Desktop", "link": "https://t.me/c/3968982450/416" },
+        { "part": "الجزء الرابع",  "title": "اليوم السابع — الجزء الرابع",  "duration": "00:00", "topic": "NotebookLM المتقدم وChatGPT Projects وClaude Desktop", "link": "https://t.me/c/3968982450/418" },
+        { "part": "الجزء الخامس", "title": "اليوم السابع — الجزء الخامس", "duration": "00:00", "topic": "NotebookLM المتقدم وChatGPT Projects وClaude Desktop", "link": "https://t.me/c/3968982450/422" },
+        { "part": "الجزء السادس", "title": "اليوم السابع — الجزء السادس", "duration": "00:00", "topic": "NotebookLM المتقدم وChatGPT Projects وClaude Desktop", "link": "https://t.me/c/3968982450/424" },
+        { "part": "الجزء السابع",  "title": "اليوم السابع — الجزء السابع",  "duration": "00:00", "topic": "NotebookLM المتقدم وChatGPT Projects وClaude Desktop", "link": "https://t.me/c/3968982450/426" }
+      ]
+    },
+    {
+      "dayId": "day8",
+      "dayLabel": "اليوم الثامن",
+      "videos": [
+        { "part": "الجزء الأول",   "title": "اليوم الثامن — الجزء الأول",   "duration": "00:00", "topic": "Notion وCanva الذكي وPerplexity وGrok", "link": "https://t.me/c/3968982450/443" },
+        { "part": "الجزء الثاني",  "title": "اليوم الثامن — الجزء الثاني",  "duration": "00:00", "topic": "Notion وCanva الذكي وPerplexity وGrok", "link": "https://t.me/c/3968982450/444" },
+        { "part": "الجزء الثالث", "title": "اليوم الثامن — الجزء الثالث", "duration": "00:00", "topic": "Notion وCanva الذكي وPerplexity وGrok", "link": "https://t.me/c/3968982450/449" },
+        { "part": "الجزء الرابع",  "title": "اليوم الثامن — الجزء الرابع",  "duration": "00:00", "topic": "Notion وCanva الذكي وPerplexity وGrok", "link": "https://t.me/c/3968982450/450" },
+        { "part": "الجزء الخامس", "title": "اليوم الثامن — الجزء الخامس", "duration": "00:00", "topic": "Notion وCanva الذكي وPerplexity وGrok", "link": "https://t.me/c/3968982450/454" },
+        { "part": "الجزء السادس", "title": "اليوم الثامن — الجزء السادس", "duration": "00:00", "topic": "Notion وCanva الذكي وPerplexity وGrok", "link": "https://t.me/c/3968982450/458" }
+      ]
+    },
+    {
+      "dayId": "day9",
+      "dayLabel": "اليوم التاسع",
+      "videos": [
+        { "part": "الجزء الأول",   "title": "اليوم التاسع — الجزء الأول",   "duration": "00:00", "topic": "تحديثات Google 2026 وElevenLabs وTurboScribe", "link": "https://t.me/c/3968982450/472" },
+        { "part": "الجزء الثاني",  "title": "اليوم التاسع — الجزء الثاني",  "duration": "00:00", "topic": "تحديثات Google 2026 وElevenLabs وTurboScribe", "link": "https://t.me/c/3968982450/474" },
+        { "part": "الجزء الثالث", "title": "اليوم التاسع — الجزء الثالث", "duration": "00:00", "topic": "تحديثات Google 2026 وElevenLabs وTurboScribe", "link": "https://t.me/c/3968982450/477" },
+        { "part": "الجزء الرابع",  "title": "اليوم التاسع — الجزء الرابع",  "duration": "00:00", "topic": "تحديثات Google 2026 وElevenLabs وTurboScribe", "link": "https://t.me/c/3968982450/479" },
+        { "part": "الجزء الخامس", "title": "اليوم التاسع — الجزء الخامس", "duration": "00:00", "topic": "تحديثات Google 2026 وElevenLabs وTurboScribe", "link": "https://t.me/c/3968982450/480" },
+        { "part": "الجزء السادس", "title": "اليوم التاسع — الجزء السادس", "duration": "00:00", "topic": "تحديثات Google 2026 وElevenLabs وTurboScribe", "link": "https://t.me/c/3968982450/484" }
+      ]
+    },
+    {
+      "dayId": "day10",
+      "dayLabel": "اليوم العاشر",
+      "videos": [
+        { "part": "الجزء الأول",   "title": "اليوم العاشر — الجزء الأول",   "duration": "00:00", "topic": "المعرض الرقمي وGoogle Flow وVibe Coding وNapkin AI", "link": "https://t.me/c/3968982450/516" },
+        { "part": "الجزء الثاني",  "title": "اليوم العاشر — الجزء الثاني",  "duration": "00:00", "topic": "المعرض الرقمي وGoogle Flow وVibe Coding وNapkin AI", "link": "https://t.me/c/3968982450/517" },
+        { "part": "الجزء الثالث", "title": "اليوم العاشر — الجزء الثالث", "duration": "00:00", "topic": "المعرض الرقمي وGoogle Flow وVibe Coding وNapkin AI", "link": "https://t.me/c/3968982450/518" },
+        { "part": "الجزء الرابع",  "title": "اليوم العاشر — الجزء الرابع",  "duration": "00:00", "topic": "المعرض الرقمي وGoogle Flow وVibe Coding وNapkin AI", "link": "https://t.me/c/3968982450/519" },
+        { "part": "الجزء الخامس", "title": "اليوم العاشر — الجزء الخامس", "duration": "00:00", "topic": "المعرض الرقمي وGoogle Flow وVibe Coding وNapkin AI", "link": "https://t.me/c/3968982450/520" },
+        { "part": "الجزء السادس", "title": "اليوم العاشر — الجزء السادس", "duration": "00:00", "topic": "المعرض الرقمي وGoogle Flow وVibe Coding وNapkin AI", "link": "https://t.me/c/3968982450/526" }
+      ]
+    },
+    {
+      "dayId": "day11",
+      "dayLabel": "اليوم الحادي عشر",
+      "videos": [
+        { "part": "الجزء الأول",   "title": "اليوم الحادي عشر — الجزء الأول",   "duration": "00:00", "topic": "Claude Artifacts ولوحات المعلومات وDreamFace وPowerPoint", "link": "https://t.me/c/3968982450/541" },
+        { "part": "الجزء الثاني",  "title": "اليوم الحادي عشر — الجزء الثاني",  "duration": "00:00", "topic": "Claude Artifacts ولوحات المعلومات وDreamFace وPowerPoint", "link": "https://t.me/c/3968982450/544" },
+        { "part": "الجزء الثالث", "title": "اليوم الحادي عشر — الجزء الثالث", "duration": "00:00", "topic": "Claude Artifacts ولوحات المعلومات وDreamFace وPowerPoint", "link": "https://t.me/c/3968982450/544" },
+        { "part": "الجزء الرابع",  "title": "اليوم الحادي عشر — الجزء الرابع",  "duration": "00:00", "topic": "Claude Artifacts ولوحات المعلومات وDreamFace وPowerPoint", "link": "https://t.me/c/3968982450/547" },
+        { "part": "الجزء الخامس", "title": "اليوم الحادي عشر — الجزء الخامس", "duration": "00:00", "topic": "Claude Artifacts ولوحات المعلومات وDreamFace وPowerPoint", "link": "https://t.me/c/3968982450/549" },
+        { "part": "الجزء السادس", "title": "اليوم الحادي عشر — الجزء السادس", "duration": "00:00", "topic": "Claude Artifacts ولوحات المعلومات وDreamFace وPowerPoint", "link": "https://t.me/c/3968982450/551" },
+        { "part": "الجزء السابع",  "title": "اليوم الحادي عشر — الجزء السابع",  "duration": "00:00", "topic": "Claude Artifacts ولوحات المعلومات وDreamFace وPowerPoint", "link": "https://t.me/c/3968982450/553" },
+        { "part": "الجزء الثامن", "title": "اليوم الحادي عشر — الجزء الثامن", "duration": "00:00", "topic": "Claude Artifacts ولوحات المعلومات وDreamFace وPowerPoint", "link": "https://t.me/c/3968982450/555" },
+        { "part": "الجزء التاسع", "title": "اليوم الحادي عشر — الجزء التاسع", "duration": "00:00", "topic": "Claude Artifacts ولوحات المعلومات وDreamFace وPowerPoint", "link": "https://t.me/c/3968982450/557" },
+        { "part": "الجزء العاشر", "title": "اليوم الحادي عشر — الجزء العاشر", "duration": "00:00", "topic": "Claude Artifacts ولوحات المعلومات وDreamFace وPowerPoint", "link": "https://t.me/c/3968982450/558" }
+      ]
+    },
+    {
+      "dayId": "day12",
+      "dayLabel": "اليوم الثاني عشر",
+      "videos": [
+        { "part": "الجزء الأول",   "title": "اليوم الثاني عشر — الجزء الأول",   "duration": "00:00", "topic": "ختام الدورة ومعرض الأعمال", "link": "https://t.me/c/3968982450/578" },
+        { "part": "الجزء الثاني",  "title": "اليوم الثاني عشر — الجزء الثاني",  "duration": "00:00", "topic": "ختام الدورة ومعرض الأعمال", "link": "https://t.me/c/3968982450/580" },
+        { "part": "الجزء الثالث", "title": "اليوم الثاني عشر — الجزء الثالث", "duration": "00:00", "topic": "ختام الدورة ومعرض الأعمال", "link": "https://t.me/c/3968982450/582" },
+        { "part": "الجزء الرابع",  "title": "اليوم الثاني عشر — الجزء الرابع",  "duration": "00:00", "topic": "ختام الدورة ومعرض الأعمال", "link": "https://t.me/c/3968982450/586" },
+        { "part": "الجزء الخامس", "title": "اليوم الثاني عشر — الجزء الخامس", "duration": "00:00", "topic": "ختام الدورة ومعرض الأعمال", "link": "https://t.me/c/3968982450/587" },
+        { "part": "الجزء السادس", "title": "اليوم الثاني عشر — الجزء السادس", "duration": "00:00", "topic": "ختام الدورة ومعرض الأعمال", "link": "https://t.me/c/3968982450/588" },
+        { "part": "الجزء السابع",  "title": "اليوم الثاني عشر — الجزء السابع",  "duration": "00:00", "topic": "ختام الدورة ومعرض الأعمال", "link": "https://t.me/c/3968982450/590" }
+      ]
+    },
+    {
+      "dayId": "day13",
+      "dayLabel": "اليوم الثالث عشر",
+      "videos": [
+        { "part": "الجزء الأول",   "title": "اليوم الثالث عشر — الجزء الأول",   "duration": "00:00", "topic": "الأدوات العلمية والتعاون البرمجي", "link": "https://t.me/c/3968982450/594" },
+        { "part": "الجزء الثاني",  "title": "اليوم الثالث عشر — الجزء الثاني",  "duration": "00:00", "topic": "الأدوات العلمية والتعاون البرمجي", "link": "https://t.me/c/3968982450/595" },
+        { "part": "الجزء الثالث", "title": "اليوم الثالث عشر — الجزء الثالث", "duration": "00:00", "topic": "الأدوات العلمية والتعاون البرمجي", "link": "https://t.me/c/3968982450/601" },
+        { "part": "الجزء الرابع",  "title": "اليوم الثالث عشر — الجزء الرابع",  "duration": "00:00", "topic": "الأدوات العلمية والتعاون البرمجي", "link": "https://t.me/c/3968982450/603" }
+      ]
+    }
   ]
 }
