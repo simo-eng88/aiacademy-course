@@ -1,0 +1,584 @@
+{
+  "tools": [
+    {
+      "name": "ChatGPT",
+      "domain": "chatgpt.com",
+      "category_ar": "روبوتات الدردشة",
+      "category_en": "AI Chatbots",
+      "benefit_ar": "مساعد ذكي للكتابة والبرمجة وإنشاء GPTs مخصصة",
+      "benefit_en": "Smart assistant for writing, coding and building custom GPTs",
+      "usage_ar": "اكتب prompt واضحًا أو أنشئ GPT خاصًا من Explore > Create",
+      "usage_en": "Write a clear prompt or build your own GPT via Explore > Create"
+    },
+    {
+      "name": "Claude",
+      "domain": "claude.ai",
+      "category_ar": "روبوتات الدردشة",
+      "category_en": "AI Chatbots",
+      "benefit_ar": "متفوّق في المستندات الطويلة والبرمجة وVibe Coding",
+      "benefit_en": "Excels at long documents, coding and Vibe Coding",
+      "usage_ar": "استخدمه للتحليل العميق وبناء لوحات المعلومات عبر Artifacts",
+      "usage_en": "Use it for deep analysis and building dashboards via Artifacts"
+    },
+    {
+      "name": "Gemini",
+      "domain": "gemini.google.com",
+      "category_ar": "روبوتات الدردشة",
+      "category_en": "AI Chatbots",
+      "benefit_ar": "مدمج بمنظومة Google ويدعم الوسائط المتعددة والفيديو",
+      "benefit_en": "Built into the Google ecosystem with rich multimodal & video support",
+      "usage_ar": "استخدم Gems وCanvas وStorybook وDeep Research",
+      "usage_en": "Use Gems, Canvas, Storybook and Deep Research"
+    },
+    {
+      "name": "Perplexity",
+      "domain": "perplexity.ai",
+      "category_ar": "روبوتات الدردشة",
+      "category_en": "AI Chatbots",
+      "benefit_ar": "محرك بحث ذكي بإجابات موثّقة بالمصادر اللحظية",
+      "benefit_en": "Smart search engine with answers cited to live sources",
+      "usage_ar": "اطرح سؤالًا بحثيًا واحصل على إجابة مع روابط المصادر",
+      "usage_en": "Ask a research question and get an answer with source links"
+    },
+    {
+      "name": "DeepSeek",
+      "domain": "deepseek.com",
+      "category_ar": "روبوتات الدردشة",
+      "category_en": "AI Chatbots",
+      "benefit_ar": "نموذج مفتوح المصدر منخفض التكلفة للاستدلال",
+      "benefit_en": "Low-cost open-source reasoning model",
+      "usage_ar": "بديل اقتصادي للمهام التحليلية والبرمجية",
+      "usage_en": "An economical alternative for analytical and coding tasks"
+    },
+    {
+      "name": "Google AI Studio",
+      "domain": "aistudio.google.com",
+      "category_ar": "البرمجة بالذكاء الاصطناعي",
+      "category_en": "AI Coding",
+      "benefit_ar": "منصة لتجربة Gemini API وبناء التطبيقات",
+      "benefit_en": "Platform to try the Gemini API and build apps",
+      "usage_ar": "اربط Gmail ثم Build > Publish لنشر تطبيقك مباشرة",
+      "usage_en": "Connect Gmail then Build > Publish to ship your app live"
+    },
+    {
+      "name": "Grok",
+      "domain": "grok.com",
+      "category_ar": "روبوتات الدردشة",
+      "category_en": "AI Chatbots",
+      "benefit_ar": "ذكاء xAI مدمج بمنصة X مع ميزة Tasks للأتمتة",
+      "benefit_en": "xAI chatbot built into X with a Tasks feature for automation",
+      "usage_ar": "فعّل Tasks لمراقبة موضوع بحثي تلقائيًا",
+      "usage_en": "Enable Tasks to track a research topic automatically"
+    },
+    {
+      "name": "Qwen",
+      "domain": "chat.qwen.ai",
+      "category_ar": "روبوتات الدردشة",
+      "category_en": "AI Chatbots",
+      "benefit_ar": "نموذج Alibaba قوي في المهام التقنية وإزالة العلامات المائية",
+      "benefit_en": "Powerful Alibaba model for technical tasks and watermark removal",
+      "usage_ar": "استخدمه كبديل متعدد اللغات وإزالة الووترمارك",
+      "usage_en": "Use it as a multilingual alternative and to remove watermarks"
+    },
+    {
+      "name": "Kimi",
+      "domain": "kimi.com",
+      "category_ar": "روبوتات الدردشة",
+      "category_en": "AI Chatbots",
+      "benefit_ar": "نموذج صيني يدعم السياقات الطويلة جدًا",
+      "benefit_en": "Chinese model supporting very long context windows",
+      "usage_ar": "مفيد لتحليل مستندات ضخمة",
+      "usage_en": "Useful for analysing huge documents"
+    },
+    {
+      "name": "NotebookLM",
+      "domain": "notebooklm.google.com",
+      "category_ar": "إدارة المعرفة",
+      "category_en": "Knowledge Management",
+      "benefit_ar": "يحوّل المستندات إلى بودكاست وخرائط ذهنية واختبارات",
+      "benefit_en": "Turns documents into podcasts, mind maps and quizzes",
+      "usage_ar": "ارفع PDF ثم أنشئ Audio Overview أو Quiz أو Infographic",
+      "usage_en": "Upload a PDF then create an Audio Overview, Quiz or Infographic"
+    },
+    {
+      "name": "Notion",
+      "domain": "notion.so",
+      "category_ar": "إدارة المعرفة",
+      "category_en": "Knowledge Management",
+      "benefit_ar": "العقل الثاني لتنظيم المعرفة والمشاريع والمعرض الرقمي",
+      "benefit_en": "A second brain for organising knowledge, projects and your portfolio",
+      "usage_ar": "استخدم القوالب من Marketplace لبناء Portfolio احترافي",
+      "usage_en": "Use Marketplace templates to build a professional Portfolio"
+    },
+    {
+      "name": "Padlet",
+      "domain": "padlet.com",
+      "category_ar": "إدارة المعرفة",
+      "category_en": "Knowledge Management",
+      "benefit_ar": "لوحة تعاونية لمشاركة الأعمال والواجبات",
+      "benefit_en": "Collaborative board for sharing work and assignments",
+      "usage_ar": "انشر مشاريعك وتفاعل مع زملاء الدورة",
+      "usage_en": "Publish your projects and interact with classmates"
+    },
+    {
+      "name": "Telegram",
+      "domain": "telegram.org",
+      "category_ar": "الأتمتة",
+      "category_en": "Automation",
+      "benefit_ar": "قناة تواصل ومنصة لبوتات الذكاء الاصطناعي",
+      "benefit_en": "Communication channel and platform for AI bots",
+      "usage_ar": "أنشئ Bot عبر BotFather واربطه بـ Zapier",
+      "usage_en": "Create a Bot via BotFather and connect it to Zapier"
+    },
+    {
+      "name": "Speakly",
+      "domain": "speakly.com",
+      "category_ar": "الإبداع والتصميم",
+      "category_en": "Creative & Design",
+      "benefit_ar": "مساعد صياغة الـ prompts وتحسين التفاعل مع الذكاء الاصطناعي",
+      "benefit_en": "Prompt-writing assistant that improves your AI interactions",
+      "usage_ar": "استخدم Professional Rewrite وAgent Mode",
+      "usage_en": "Use Professional Rewrite and Agent Mode"
+    },
+    {
+      "name": "Zapier",
+      "domain": "zapier.com",
+      "category_ar": "الأتمتة",
+      "category_en": "Automation",
+      "benefit_ar": "يربط التطبيقات ويؤتمت سير العمل دون برمجة",
+      "benefit_en": "Connects apps and automates workflows with no code",
+      "usage_ar": "أنشئ Zap بين Gmail وTelegram وPadlet",
+      "usage_en": "Create a Zap between Gmail, Telegram and Padlet"
+    },
+    {
+      "name": "n8n",
+      "domain": "n8n.io",
+      "category_ar": "الأتمتة",
+      "category_en": "Automation",
+      "benefit_ar": "أتمتة مفتوحة المصدر بعقد مرئية (Nodes)",
+      "benefit_en": "Open-source automation with visual nodes",
+      "usage_ar": "بديل مرن لـ Zapier مع تحكّم أعمق",
+      "usage_en": "A flexible Zapier alternative with deeper control"
+    },
+    {
+      "name": "Make",
+      "domain": "make.com",
+      "category_ar": "الأتمتة",
+      "category_en": "Automation",
+      "benefit_ar": "منصة أتمتة بصرية متقدمة (Integromat سابقًا)",
+      "benefit_en": "Advanced visual automation platform (formerly Integromat)",
+      "usage_ar": "لبناء سيناريوهات أتمتة معقدة",
+      "usage_en": "For building complex automation scenarios"
+    },
+    {
+      "name": "Manus",
+      "domain": "manus.im",
+      "category_ar": "الأتمتة",
+      "category_en": "Automation",
+      "benefit_ar": "وكيل ذكاء اصطناعي ينفّذ المهام البحثية المعقدة ذاتيًا",
+      "benefit_en": "AI agent that autonomously executes complex research tasks",
+      "usage_ar": "كلّفه بمهمة بحثية متعددة الخطوات واستلم النتيجة",
+      "usage_en": "Assign a multi-step research task and receive the result"
+    },
+    {
+      "name": "Lovable",
+      "domain": "lovable.dev",
+      "category_ar": "البرمجة بالذكاء الاصطناعي",
+      "category_en": "AI Coding",
+      "benefit_ar": "بناء تطبيقات الويب بالوصف اللغوي (Vibe Coding)",
+      "benefit_en": "Build web apps by describing them (Vibe Coding)",
+      "usage_ar": "صف التطبيق المطلوب وانشره مباشرة",
+      "usage_en": "Describe the app you want and publish it directly"
+    },
+    {
+      "name": "Replit",
+      "domain": "replit.com",
+      "category_ar": "البرمجة بالذكاء الاصطناعي",
+      "category_en": "AI Coding",
+      "benefit_ar": "بيئة برمجة سحابية للبناء والنشر",
+      "benefit_en": "Cloud coding environment to build and deploy",
+      "usage_ar": "اكتب وشغّل وانشر الكود في المتصفح",
+      "usage_en": "Write, run and publish code in the browser"
+    },
+    {
+      "name": "Base44",
+      "domain": "base44.com",
+      "category_ar": "البرمجة بالذكاء الاصطناعي",
+      "category_en": "AI Coding",
+      "benefit_ar": "منصة Vibe Coding لبناء تطبيقات الويب",
+      "benefit_en": "Vibe Coding platform for building web apps",
+      "usage_ar": "بديل لـ Lovable لبناء التطبيقات بسرعة",
+      "usage_en": "A Lovable alternative to build apps quickly"
+    },
+    {
+      "name": "Canva",
+      "domain": "canva.com",
+      "category_ar": "الإبداع والتصميم",
+      "category_en": "Creative & Design",
+      "benefit_ar": "تصميم بصري مع أدوات ذكاء اصطناعي قوية",
+      "benefit_en": "Visual design with powerful AI tools",
+      "usage_ar": "استخدم Magic Eraser وMagic Expand وImage to Video",
+      "usage_en": "Use Magic Eraser, Magic Expand and Image to Video"
+    },
+    {
+      "name": "Canva AI Code",
+      "domain": "canva.com",
+      "category_ar": "البرمجة بالذكاء الاصطناعي",
+      "category_en": "AI Coding",
+      "benefit_ar": "توليد كود وتطبيقات داخل Canva",
+      "benefit_en": "Generate code and apps inside Canva",
+      "usage_ar": "حوّل التصميم إلى لوحة معلومات تفاعلية",
+      "usage_en": "Turn a design into an interactive dashboard"
+    },
+    {
+      "name": "Google Flow",
+      "domain": "labs.google",
+      "category_ar": "الفيديو والصوت",
+      "category_en": "Video & Audio",
+      "benefit_ar": "توليد فيديو بشخصيات ومشاهد متّسقة (Consistency)",
+      "benefit_en": "Generate video with consistent characters and scenes",
+      "usage_ar": "أنشئ Characters واضبط الاتساق عبر اللقطات",
+      "usage_en": "Create Characters and keep consistency across shots"
+    },
+    {
+      "name": "Mind Video",
+      "domain": "mindvideo.com",
+      "category_ar": "الفيديو والصوت",
+      "category_en": "Video & Audio",
+      "benefit_ar": "تحويل الأفكار إلى مفاهيم فيديو بصرية",
+      "benefit_en": "Turn ideas into visual video concepts",
+      "usage_ar": "استخدمه لتوليد فيديو من نص",
+      "usage_en": "Use it to generate video from text"
+    },
+    {
+      "name": "Semantic Scholar",
+      "domain": "semanticscholar.org",
+      "category_ar": "أدوات البحث العلمي",
+      "category_en": "Academic Research",
+      "benefit_ar": "محرك بحث أكاديمي بفهم دلالي (NLP) وتنظيم بالمكتبات",
+      "benefit_en": "Academic search engine with semantic (NLP) understanding and libraries",
+      "usage_ar": "نظّم الأوراق في Folders مع Auto Label",
+      "usage_en": "Organise papers in Folders with Auto Label"
+    },
+    {
+      "name": "Connected Papers",
+      "domain": "connectedpapers.com",
+      "category_ar": "أدوات البحث العلمي",
+      "category_en": "Academic Research",
+      "benefit_ar": "خريطة بصرية للأوراق المرتبطة بورقة مفتاحية",
+      "benefit_en": "A visual map of papers related to a key paper",
+      "usage_ar": "ابدأ بورقة محورية لاكتشاف الأوراق المتصلة",
+      "usage_en": "Start with a seminal paper to discover connected ones"
+    },
+    {
+      "name": "Research Rabbit",
+      "domain": "researchrabbit.ai",
+      "category_ar": "أدوات البحث العلمي",
+      "category_en": "Academic Research",
+      "benefit_ar": "اكتشاف الأوراق وإدارة المجموعات البحثية",
+      "benefit_en": "Discover papers and manage research collections",
+      "usage_ar": "تتبّع الاستشهادات وبناء شبكة بحثية",
+      "usage_en": "Track citations and build a research network"
+    },
+    {
+      "name": "SciSpace",
+      "domain": "scispace.com",
+      "category_ar": "أدوات البحث العلمي",
+      "category_en": "Academic Research",
+      "benefit_ar": "شرح الأوراق الأكاديمية المعقدة بلغة مبسّطة (Typeset)",
+      "benefit_en": "Explains complex academic papers in simple language (Typeset)",
+      "usage_ar": "الصق ورقة واطلب شرحًا مبسّطًا",
+      "usage_en": "Paste a paper and ask for a simplified explanation"
+    },
+    {
+      "name": "Consensus",
+      "domain": "consensus.app",
+      "category_ar": "أدوات البحث العلمي",
+      "category_en": "Academic Research",
+      "benefit_ar": "يبحث ويلخّص النتائج عبر آلاف الأوراق العلمية",
+      "benefit_en": "Searches and summarises results across thousands of papers",
+      "usage_ar": "اطرح سؤالًا علميًا واحصل على إجماع الأبحاث",
+      "usage_en": "Ask a scientific question and get the research consensus"
+    },
+    {
+      "name": "CORE",
+      "domain": "core.ac.uk",
+      "category_ar": "أدوات البحث العلمي",
+      "category_en": "Academic Research",
+      "benefit_ar": "قاعدة بيانات أبحاث مفتوحة الوصول مجانية",
+      "benefit_en": "Free open-access research database",
+      "usage_ar": "ابحث عن أوراق مفتوحة الوصول مجانًا",
+      "usage_en": "Search for open-access papers for free"
+    },
+    {
+      "name": "ASTA",
+      "domain": "allenai.org",
+      "category_ar": "أدوات البحث العلمي",
+      "category_en": "Academic Research",
+      "benefit_ar": "قاعدة أبحاث منظّمة من معهد Allen للذكاء الاصطناعي",
+      "benefit_en": "Curated research database from the Allen Institute for AI",
+      "usage_ar": "الوصول لأبحاث منتقاة عالية الجودة",
+      "usage_en": "Access high-quality, hand-picked research"
+    },
+    {
+      "name": "Google Scholar PDF Reader",
+      "domain": "scholar.google.com",
+      "category_ar": "أدوات البحث العلمي",
+      "category_en": "Academic Research",
+      "benefit_ar": "قارئ أوراق علمية بتعليقات ذكية",
+      "benefit_en": "Academic paper reader with smart annotations",
+      "usage_ar": "اقرأ الـ PDF مع شرح ذكي للمصطلحات",
+      "usage_en": "Read the PDF with smart explanations of terms"
+    },
+    {
+      "name": "Originality.ai",
+      "domain": "originality.ai",
+      "category_ar": "كشف الذكاء الاصطناعي",
+      "category_en": "AI Detection",
+      "benefit_ar": "كشف المحتوى المولّد بالذكاء الاصطناعي (AI مقابل بشري)",
+      "benefit_en": "Detects AI-generated content (AI vs human)",
+      "usage_ar": "افحص النص لمعرفة نسبة الذكاء الاصطناعي",
+      "usage_en": "Scan text to see its AI-likelihood percentage"
+    },
+    {
+      "name": "TinyWow",
+      "domain": "tinywow.com",
+      "category_ar": "كشف الذكاء الاصطناعي",
+      "category_en": "AI Detection",
+      "benefit_ar": "أدوات معالجة PDF وصور وفيديو مجانية بلا علامة مائية",
+      "benefit_en": "Free PDF, image and video tools with no watermark",
+      "usage_ar": "حوّل وحرّر الملفات مجانًا بلا ووترمارك",
+      "usage_en": "Convert and edit files for free without watermarks"
+    },
+    {
+      "name": "Unwatermark",
+      "domain": "unwatermark.ai",
+      "category_ar": "كشف الذكاء الاصطناعي",
+      "category_en": "AI Detection",
+      "benefit_ar": "إزالة العلامات المائية من الصور أونلاين",
+      "benefit_en": "Remove watermarks from images online",
+      "usage_ar": "ارفع الصورة لإزالة الووترمارك",
+      "usage_en": "Upload an image to remove the watermark"
+    },
+    {
+      "name": "Reverso",
+      "domain": "reverso.net",
+      "category_ar": "الترجمة",
+      "category_en": "Translation",
+      "benefit_ar": "ترجمة احترافية واعية بالسياق والمتلازمات اللفظية",
+      "benefit_en": "Context-aware professional translation with collocations",
+      "usage_ar": "ترجم مع أمثلة سياقية حقيقية",
+      "usage_en": "Translate with real contextual examples"
+    },
+    {
+      "name": "TransOver",
+      "domain": "chromewebstore.google.com",
+      "category_ar": "الترجمة",
+      "category_en": "Translation",
+      "benefit_ar": "إضافة متصفح للترجمة الفورية فوق أي صفحة",
+      "benefit_en": "Browser extension for instant translation over any page",
+      "usage_ar": "مرّر الماوس فوق الكلمة لترجمتها فورًا",
+      "usage_en": "Hover over a word to translate it instantly"
+    },
+    {
+      "name": "YouGlish",
+      "domain": "youglish.com",
+      "category_ar": "الترجمة",
+      "category_en": "Translation",
+      "benefit_ar": "سماع نطق الكلمات من متحدثين أصليين في فيديوهات حقيقية",
+      "benefit_en": "Hear native speakers pronounce words in real videos",
+      "usage_ar": "ابحث عن عبارة لسماع نطقها الطبيعي",
+      "usage_en": "Search a phrase to hear natural pronunciation"
+    },
+    {
+      "name": "MateCat",
+      "domain": "matecat.com",
+      "category_ar": "الترجمة",
+      "category_en": "Translation",
+      "benefit_ar": "أداة ترجمة بمساعدة الحاسوب (CAT) للمترجمين المحترفين",
+      "benefit_en": "Computer-assisted translation (CAT) tool for professionals",
+      "usage_ar": "حلّل وترجم PDF عبر Draft ثم Translate",
+      "usage_en": "Analyse and translate a PDF via Draft then Translate"
+    },
+    {
+      "name": "Trinka",
+      "domain": "trinka.ai",
+      "category_ar": "الترجمة",
+      "category_en": "Translation",
+      "benefit_ar": "مدقق لغوي وأكاديمي متقدم للإنجليزية",
+      "benefit_en": "Advanced grammar and academic English checker",
+      "usage_ar": "حسّن صياغة الأوراق الأكاديمية",
+      "usage_en": "Improve the wording of academic papers"
+    },
+    {
+      "name": "ElevenLabs",
+      "domain": "elevenlabs.io",
+      "category_ar": "الفيديو والصوت",
+      "category_en": "Video & Audio",
+      "benefit_ar": "تحويل النص إلى كلام بأصوات بشرية فائقة الواقعية",
+      "benefit_en": "Convert text to ultra-realistic human speech",
+      "usage_ar": "استخدم Text to Speech لتوليد التعليق الصوتي",
+      "usage_en": "Use Text to Speech to generate voiceovers"
+    },
+    {
+      "name": "TurboScribe",
+      "domain": "turboscribe.ai",
+      "category_ar": "الفيديو والصوت",
+      "category_en": "Video & Audio",
+      "benefit_ar": "تفريغ الصوت والفيديو إلى نص بصيغ متعددة",
+      "benefit_en": "Transcribe audio and video to text in multiple formats",
+      "usage_ar": "فرّغ محاضرة ثم ارفعها إلى NotebookLM",
+      "usage_en": "Transcribe a lecture then upload it to NotebookLM"
+    },
+    {
+      "name": "CapCut",
+      "domain": "capcut.com",
+      "category_ar": "الفيديو والصوت",
+      "category_en": "Video & Audio",
+      "benefit_ar": "محرّر فيديو مع كتابة تلقائية للترجمة (Auto Captions)",
+      "benefit_en": "Video editor with automatic captions (Auto Captions)",
+      "usage_ar": "أضف Auto Captions تلقائيًا لفيديوهاتك",
+      "usage_en": "Add Auto Captions to your videos automatically"
+    },
+    {
+      "name": "Dream Face",
+      "domain": "dreamfaceapp.com",
+      "category_ar": "الفيديو والصوت",
+      "category_en": "Video & Audio",
+      "benefit_ar": "تحريك الوجوه من صورة وإنشاء أفاتار ناطق",
+      "benefit_en": "Animate faces from a photo and create a talking avatar",
+      "usage_ar": "ارفع صورة + صوت لتوليد فيديو متزامن الشفاه",
+      "usage_en": "Upload a photo + audio to generate a lip-synced video"
+    },
+    {
+      "name": "DreamFace",
+      "domain": "dreamfaceapp.com",
+      "category_ar": "الفيديو والصوت",
+      "category_en": "Video & Audio",
+      "benefit_ar": "تبديل الوجوه وأفاتار فيديو مع إزالة العلامة المائية",
+      "benefit_en": "Face swapping and video avatars with watermark removal",
+      "usage_ar": "استخدم Watermark Remover وحرّك الوجه",
+      "usage_en": "Use Watermark Remover and animate the face"
+    },
+    {
+      "name": "Napkin AI",
+      "domain": "napkin.ai",
+      "category_ar": "الإبداع والتصميم",
+      "category_en": "Creative & Design",
+      "benefit_ar": "يحوّل النص إلى مخططات بصرية (Mind Map, SWOT, Process)",
+      "benefit_en": "Turns text into visuals (Mind Map, SWOT, Process)",
+      "usage_ar": "الصق نصًا واختر نوع المخطط ثم صدّره",
+      "usage_en": "Paste text, pick a diagram type and export"
+    },
+    {
+      "name": "Meta AI Vibes",
+      "domain": "meta.ai",
+      "category_ar": "الإبداع والتصميم",
+      "category_en": "Creative & Design",
+      "benefit_ar": "أداة Meta الإبداعية لمحتوى التواصل والقصص المصوّرة",
+      "benefit_en": "Meta's creative tool for social content and visual stories",
+      "usage_ar": "أنشئ محتوى بصريًا لمنصات التواصل",
+      "usage_en": "Create visual content for social platforms"
+    },
+    {
+      "name": "Google Antigravity",
+      "domain": "antigravity.google",
+      "category_ar": "البرمجة بالذكاء الاصطناعي",
+      "category_en": "AI Coding",
+      "benefit_ar": "منصة Google التجريبية لبناء التطبيقات (تعتمد Claude/Codex)",
+      "benefit_en": "Google's experimental app-building platform (uses Claude/Codex)",
+      "usage_ar": "ابنِ تطبيقات ولوحات معلومات تجريبيًا",
+      "usage_en": "Build apps and dashboards experimentally"
+    },
+    {
+      "name": "Codex",
+      "domain": "openai.com",
+      "category_ar": "البرمجة بالذكاء الاصطناعي",
+      "category_en": "AI Coding",
+      "benefit_ar": "وكيل برمجة من OpenAI لكتابة وتنفيذ الكود",
+      "benefit_en": "OpenAI coding agent that writes and runs code",
+      "usage_ar": "كلّفه بمهام برمجية متكاملة",
+      "usage_en": "Assign it complete coding tasks"
+    },
+    {
+      "name": "EasyClaw",
+      "domain": "easyclaw.com",
+      "category_ar": "الأتمتة",
+      "category_en": "Automation",
+      "benefit_ar": "سوق عمل حر يربط الوظائف بالمواهب بالذكاء الاصطناعي",
+      "benefit_en": "Freelance marketplace matching jobs to talent with AI",
+      "usage_ar": "اعرض خدماتك أو ابحث عن مهام عبر Telegram",
+      "usage_en": "Offer your services or find tasks via Telegram"
+    },
+    {
+      "name": "Genspark",
+      "domain": "genspark.ai",
+      "category_ar": "الأتمتة",
+      "category_en": "Automation",
+      "benefit_ar": "وكيل ذكاء اصطناعي لإنجاز المهام والبحث",
+      "benefit_en": "AI agent for completing tasks and research",
+      "usage_ar": "استخدمه كوكيل بحث وإنشاء محتوى",
+      "usage_en": "Use it as a research and content-creation agent"
+    },
+    {
+      "name": "Z.ai",
+      "domain": "z.ai",
+      "category_ar": "البرمجة بالذكاء الاصطناعي",
+      "category_en": "AI Coding",
+      "benefit_ar": "وكلاء برمجة (Deep SWE) من Zhipu AI",
+      "benefit_en": "Coding agents (Deep SWE) from Zhipu AI",
+      "usage_ar": "لحل مهام هندسة البرمجيات الحقيقية",
+      "usage_en": "For solving real software-engineering tasks"
+    },
+    {
+      "name": "Skywork",
+      "domain": "skywork.ai",
+      "category_ar": "الأتمتة",
+      "category_en": "Automation",
+      "benefit_ar": "وكيل ذكاء اصطناعي لإنشاء المستندات والعروض",
+      "benefit_en": "AI agent for creating documents and presentations",
+      "usage_ar": "ولّد تقارير وعروضًا متكاملة",
+      "usage_en": "Generate complete reports and decks"
+    },
+    {
+      "name": "EngVid",
+      "domain": "engvid.com",
+      "category_ar": "الترجمة",
+      "category_en": "Translation",
+      "benefit_ar": "دروس فيديو مجانية لتعلّم اللغة الإنجليزية",
+      "benefit_en": "Free video lessons for learning English",
+      "usage_ar": "شاهد دروسًا حسب المستوى والموضوع",
+      "usage_en": "Watch lessons by level and topic"
+    },
+    {
+      "name": "Fiverr",
+      "domain": "fiverr.com",
+      "category_ar": "الأتمتة",
+      "category_en": "Automation",
+      "benefit_ar": "منصة عمل حر لبيع الخدمات الرقمية",
+      "benefit_en": "Freelance marketplace to sell digital services",
+      "usage_ar": "اعرض خدمات الذكاء الاصطناعي ككسب إضافي",
+      "usage_en": "Offer AI services as a side income"
+    },
+    {
+      "name": "Similarweb",
+      "domain": "similarweb.com",
+      "category_ar": "أدوات البحث العلمي",
+      "category_en": "Academic Research",
+      "benefit_ar": "تحليل زيارات المواقع وأداء SEO",
+      "benefit_en": "Analyse website traffic and SEO performance",
+      "usage_ar": "حلّل ترتيب وزيارات أي موقع",
+      "usage_en": "Analyse the ranking and traffic of any site"
+    },
+    {
+      "name": "PowerPoint",
+      "domain": "microsoft.com",
+      "category_ar": "الإبداع والتصميم",
+      "category_en": "Creative & Design",
+      "benefit_ar": "برنامج العروض التقديمية مع إضافات ذكاء اصطناعي",
+      "benefit_en": "Presentation software with AI add-ins",
+      "usage_ar": "ولّد عرضًا عبر ChatGPT ثم حرّره في PowerPoint",
+      "usage_en": "Generate a deck via ChatGPT then edit it in PowerPoint"
+    }
+  ]
+}

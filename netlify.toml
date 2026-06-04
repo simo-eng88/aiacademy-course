@@ -1,0 +1,38 @@
+# ─────────────────────────────────────────────────────────────
+# Netlify configuration – AI Academy Cohort 8
+# ─────────────────────────────────────────────────────────────
+
+[build]
+  # Pure static site – no build command needed.
+  publish = "."
+
+# ── Security headers ──────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options        = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+
+# ── Content JSON files: no caching (always fresh from CMS) ────
+[[headers]]
+  for = "/content/*"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+[[headers]]
+  for = "/knowledge.json"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+# ── Netlify Identity / Git Gateway OAuth callback ─────────────
+[[redirects]]
+  from   = "/api/auth"
+  to     = "/.netlify/identity/authorize"
+  status = 200
+
+# ── Serve index.html for any path that isn't a real file ──────
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200

@@ -1,0 +1,499 @@
+# ═══════════════════════════════════════════════════════════════════
+#  Decap CMS config — AI Academy Cohort 8
+#  Every save here commits to GitHub → Netlify auto-redeploys
+# ═══════════════════════════════════════════════════════════════════
+
+backend:
+  name: git-gateway        # Netlify Identity + Git Gateway (OAuth)
+  branch: main             # target branch
+
+# Uncomment to test locally with `npx decap-server`
+# local_backend: true
+
+media_folder: "media/uploads"
+public_folder: "/media/uploads"
+
+# Show in Arabic by default; editors can switch language
+locale: ar
+
+# ───────────────────────────────────────────────────────────────────
+# COLLECTION 1 — Course Days
+#   File: content/days.json  (array of day objects)
+#   Most-edited collection: titles, overviews, points, tips, takeaways
+# ───────────────────────────────────────────────────────────────────
+collections:
+
+  - name: course_days
+    label: "📅 أيام الدورة"
+    label_singular: "يوم"
+    description: "تحرير محتوى كل يوم من أيام الدورة الاثني عشر — العنوان، النظرة العامة، النقاط، الخلاصات، النصائح."
+    files:
+      - name: days_data
+        label: "جميع أيام الدورة (days.json)"
+        file: "content/days.json"
+        description: >
+          هذا الملف يحتوي على محتوى جميع الأيام الاثني عشر بالعربية والإنجليزية.
+          كل تغيير هنا يُنشر تلقائياً على الموقع بعد إعادة نشر Netlify.
+        fields:
+          - label: "الأيام"
+            name: days
+            widget: list
+            collapsed: false
+            summary: "{{fields.day_ar}} — {{fields.title_ar}}"
+            fields:
+              # ── Identity ───────────────────────────────────────
+              - label: "معرّف اليوم (لا تغيّره)"
+                name: id
+                widget: string
+                hint: "مثال: day1  — لا تُعدّل هذا الحقل"
+
+              - label: "رقم اليوم العربي"
+                name: dayNum
+                widget: string
+                hint: "مثال: ١  ٢  ٣ …"
+
+              - label: "إيموجي اليوم"
+                name: emoji
+                widget: string
+                hint: "نسخ إيموجي من الكيبورد أو موقع emojipedia.org"
+                default: "📚"
+
+              - label: "لون البنر (ابتداء)"
+                name: c1
+                widget: color
+                default: "#3b82f6"
+
+              - label: "لون البنر (نهاية)"
+                name: c2
+                widget: color
+                default: "#6366f1"
+
+              # ── Arabic fields ───────────────────────────────────
+              - label: "عنوان اليوم (AR)"
+                name: day_ar
+                widget: string
+                hint: "مثال: اليوم الأول"
+
+              - label: "عنوان الدرس (AR)"
+                name: title_ar
+                widget: string
+
+              - label: "العنوان الفرعي (AR)"
+                name: subtitle_ar
+                widget: string
+                hint: "قائمة الأدوات مفصولة بـ ·"
+
+              - label: "التاريخ"
+                name: date
+                widget: string
+                hint: "مثال: 29 يونيو 2026"
+
+              - label: "وقت القراءة (AR)"
+                name: readTime_ar
+                widget: string
+                default: "12 دقيقة"
+
+              - label: "النظرة العامة (AR)"
+                name: overview_ar
+                widget: text
+                hint: "فقرة تمهيدية ليوم الدورة — تظهر في أعلى صفحة اليوم"
+
+              - label: "ملخص PDF (AR)"
+                name: pdfSummary_ar
+                widget: text
+                hint: "ملخص المحتوى الذي يظهر في بطاقة 'ملخص اليوم'"
+
+              - label: "النقاط الرئيسية (AR)"
+                name: points_ar
+                widget: list
+                field:
+                  label: نقطة
+                  name: item
+                  widget: string
+
+              - label: "الخلاصات (AR)"
+                name: takeaways_ar
+                widget: list
+                field:
+                  label: خلاصة
+                  name: item
+                  widget: string
+
+              - label: "نصائح إضافية (AR)"
+                name: tips_ar
+                widget: list
+                field:
+                  label: نصيحة
+                  name: item
+                  widget: string
+
+              - label: "الأدوات المستخدمة في هذا اليوم"
+                name: siteKeys
+                widget: list
+                hint: "أسماء الأدوات بالإنجليزية كما هي في قائمة المواقع"
+                field:
+                  label: اسم الأداة
+                  name: tool
+                  widget: string
+
+              # ── English fields ──────────────────────────────────
+              - label: "Day label (EN)"
+                name: day_en
+                widget: string
+                hint: "Example: Day 1"
+
+              - label: "Lesson title (EN)"
+                name: title_en
+                widget: string
+
+              - label: "Subtitle (EN)"
+                name: subtitle_en
+                widget: string
+
+              - label: "Reading time (EN)"
+                name: readTime_en
+                widget: string
+                default: "12 min"
+
+              - label: "Overview (EN)"
+                name: overview_en
+                widget: text
+
+              - label: "PDF Summary (EN)"
+                name: pdfSummary_en
+                widget: text
+
+              - label: "Key points (EN)"
+                name: points_en
+                widget: list
+                field:
+                  label: Point
+                  name: item
+                  widget: string
+
+              - label: "Takeaways (EN)"
+                name: takeaways_en
+                widget: list
+                field:
+                  label: Takeaway
+                  name: item
+                  widget: string
+
+              - label: "Extra tips (EN)"
+                name: tips_en
+                widget: list
+                field:
+                  label: Tip
+                  name: item
+                  widget: string
+
+  # ─────────────────────────────────────────────────────────────────
+  # COLLECTION 2 — Video Library
+  #   File: content/videos.json
+  #   Each day has a list of up to 8 video parts.
+  #   This is the MOST FREQUENTLY updated collection.
+  # ─────────────────────────────────────────────────────────────────
+  - name: videos
+    label: "🎬 فيديوهات الدورة"
+    label_singular: "يوم فيديو"
+    description: >
+      أضف أو عدّل روابط فيديوهات كل يوم. كل حفظ يُحدّث الموقع مباشرةً
+      دون الحاجة لتعديل الكود.
+    files:
+      - name: videos_data
+        label: "جميع فيديوهات الدورة (videos.json)"
+        file: "content/videos.json"
+        fields:
+          - label: "الأيام"
+            name: days
+            widget: list
+            collapsed: false
+            summary: "{{fields.dayId}} — {{fields.dayLabel}}"
+            fields:
+              - label: "معرّف اليوم"
+                name: dayId
+                widget: string
+                hint: "مثال: day1  day2  day3 …"
+
+              - label: "اسم اليوم (للعرض)"
+                name: dayLabel
+                widget: string
+                hint: "مثال: اليوم الأول"
+
+              - label: "الفيديوهات"
+                name: videos
+                widget: list
+                collapsed: true
+                summary: "{{fields.part}} — {{fields.title}}"
+                fields:
+                  - label: "رقم الجزء"
+                    name: part
+                    widget: string
+                    hint: "مثال: الجزء الأول"
+
+                  - label: "عنوان الفيديو"
+                    name: title
+                    widget: string
+
+                  - label: "مدة الفيديو"
+                    name: duration
+                    widget: string
+                    hint: "مثال: 18:45"
+                    default: "00:00"
+
+                  - label: "الموضوع الرئيسي"
+                    name: topic
+                    widget: string
+                    default: "—"
+
+                  - label: "رابط الفيديو (YouTube / Vimeo …)"
+                    name: link
+                    widget: string
+                    hint: "أدخل الرابط الكامل بما فيه https://"
+                    default: "#"
+
+  # ─────────────────────────────────────────────────────────────────
+  # COLLECTION 3 — FAQ / Chatbot Knowledge Base
+  #   File: knowledge.json  (single file with all FAQ entries)
+  #   The FAQ bot fetches knowledge.json at runtime for free offline search.
+  #   Changes here go live on the next Netlify deploy.
+  # ─────────────────────────────────────────────────────────────────
+  - name: knowledge_base
+    label: "🤖 قاعدة أسئلة المساعد"
+    label_singular: "قاعدة المعرفة"
+    description: >
+      تحرير قاعدة الأسئلة والأجوبة التي يستخدمها مساعد الدورة الذكي.
+      كل حفظ هنا يُحدّث knowledge.json مباشرةً وتنعكس التغييرات على الموقع
+      تلقائيًا بعد إعادة نشر Netlify.
+    files:
+      - name: knowledge_data
+        label: "قاعدة الأسئلة (knowledge.json)"
+        file: "knowledge.json"
+        fields:
+          - label: "بيانات الدورة"
+            name: metadata
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "اسم الدورة",  name: course,       widget: string }
+              - { label: "الدفعة",       name: cohort,       widget: string }
+              - { label: "المحاضر",      name: instructor,   widget: string }
+              - { label: "المطوّر",      name: developer,    widget: string }
+              - { label: "آخر تحديث",   name: last_updated, widget: string }
+              - { label: "عدد الأيام",  name: total_days,   widget: number }
+              - { label: "عدد الأدوات", name: total_tools,  widget: number }
+
+          - label: "الأسئلة"
+            name: faqs
+            widget: list
+            collapsed: false
+            summary: "[{{fields.category}}] {{fields.question_ar}}"
+            fields:
+              - label: "رقم السؤال (ID)"
+                name: id
+                widget: number
+                hint: "رقم فريد لكل سؤال — يُستخدم داخلياً"
+
+              - label: "الكلمات المفتاحية"
+                name: keywords
+                widget: list
+                hint: >
+                  كلمات يبحث عنها الطالب (بالعربية والإنجليزية).
+                  مثال: chatgpt, شات, gpt, openai
+                field:
+                  label: كلمة مفتاحية
+                  name: kw
+                  widget: string
+
+              - label: "السؤال (AR)"
+                name: question_ar
+                widget: string
+
+              - label: "السؤال (EN)"
+                name: question_en
+                widget: string
+
+              - label: "الإجابة (AR)"
+                name: answer_ar
+                widget: text
+
+              - label: "الإجابة (EN)"
+                name: answer_en
+                widget: text
+
+              - label: "اليوم المرتبط"
+                name: day
+                widget: number
+                required: false
+                hint: "رقم اليوم 1–12 أو اتركه فارغاً إذا كان عاماً"
+
+              - label: "الفئة"
+                name: category
+                widget: select
+                options:
+                  - "روبوتات الدردشة"
+                  - "إدارة المعرفة"
+                  - "الأتمتة"
+                  - "البرمجة بالذكاء الاصطناعي"
+                  - "أدوات البحث العلمي"
+                  - "الإبداع والتصميم"
+                  - "الفيديو والصوت"
+                  - "الترجمة"
+                  - "كشف الذكاء الاصطناعي"
+                  - "أيام الدورة"
+                  - "المفاهيم الأساسية"
+                  - "معلومات عامة"
+                default: "معلومات عامة"
+
+              - label: "أسئلة ذات صلة (IDs)"
+                name: related_ids
+                widget: list
+                required: false
+                hint: "أرقام IDs أسئلة مشابهة"
+                field:
+                  label: رقم
+                  name: rid
+                  widget: number
+
+  # ─────────────────────────────────────────────────────────────────
+  # COLLECTION 4 — Sites / Tools Catalogue
+  #   File: content/sites.json  (object keyed by tool name)
+  # ─────────────────────────────────────────────────────────────────
+  - name: sites_tools
+    label: "🔗 الأدوات والمواقع"
+    label_singular: "أداة"
+    description: >
+      قاموس جميع الأدوات المذكورة في الدورة.
+      تظهر في جدول 'المواقع المذكورة' بكل يوم وفي دليل الأدوات الكامل.
+    files:
+      - name: sites_data
+        label: "دليل الأدوات (sites.json)"
+        file: "content/sites.json"
+        fields:
+          - label: "الأدوات"
+            name: tools
+            widget: list
+            collapsed: false
+            summary: "{{fields.name}} ({{fields.category_ar}})"
+            fields:
+              - label: "اسم الأداة (إنجليزي)"
+                name: name
+                widget: string
+                hint: "الاسم الدقيق كما يظهر في الكود — مثال: ChatGPT"
+
+              - label: "اسم النطاق"
+                name: domain
+                widget: string
+                hint: "بدون https://  مثال: chatgpt.com"
+
+              - label: "الفئة (AR)"
+                name: category_ar
+                widget: select
+                options:
+                  - "روبوتات الدردشة"
+                  - "إدارة المعرفة"
+                  - "الأتمتة"
+                  - "البرمجة بالذكاء الاصطناعي"
+                  - "أدوات البحث العلمي"
+                  - "الإبداع والتصميم"
+                  - "الفيديو والصوت"
+                  - "الترجمة"
+                  - "كشف الذكاء الاصطناعي"
+
+              - label: "الفئة (EN)"
+                name: category_en
+                widget: select
+                options:
+                  - "AI Chatbots"
+                  - "Knowledge Management"
+                  - "Automation"
+                  - "AI Coding"
+                  - "Academic Research"
+                  - "Creative & Design"
+                  - "Video & Audio"
+                  - "Translation"
+                  - "AI Detection"
+
+              - label: "الفائدة (AR)"
+                name: benefit_ar
+                widget: string
+
+              - label: "الفائدة (EN)"
+                name: benefit_en
+                widget: string
+
+              - label: "كيفية الاستخدام (AR)"
+                name: usage_ar
+                widget: string
+
+              - label: "كيفية الاستخدام (EN)"
+                name: usage_en
+                widget: string
+
+  # ─────────────────────────────────────────────────────────────────
+  # COLLECTION 5 — Site Settings (global)
+  # ─────────────────────────────────────────────────────────────────
+  - name: settings
+    label: "⚙️ إعدادات الموقع"
+    files:
+      - name: global_settings
+        label: "الإعدادات العامة (settings.json)"
+        file: "content/settings.json"
+        fields:
+          - label: "اسم الدورة (AR)"
+            name: course_title_ar
+            widget: string
+            default: "أكاديمية الذكاء الاصطناعي — الدفعة الثامنة"
+
+          - label: "Course title (EN)"
+            name: course_title_en
+            widget: string
+            default: "AI Academy — Cohort 8"
+
+          - label: "المحاضر (AR)"
+            name: instructor_ar
+            widget: string
+            default: "د. محمد أنصاري"
+
+          - label: "Instructor (EN)"
+            name: instructor_en
+            widget: string
+            default: "Dr. Mohamed Ansary"
+
+          - label: "المطوّر (AR)"
+            name: developer_ar
+            widget: string
+            default: "م. محمد سامي"
+
+          - label: "Developer (EN)"
+            name: developer_en
+            widget: string
+            default: "Eng. Mohamed Samy"
+
+          - label: "عدد أيام الدورة"
+            name: total_days
+            widget: number
+            default: 12
+
+          - label: "سنة الدفعة"
+            name: cohort_year
+            widget: string
+            default: "2026"
+
+          - label: "رابط Padlet الرئيسي"
+            name: padlet_url
+            widget: string
+            hint: "رابط Padlet للواجبات والمشاريع"
+            default: "https://padlet.com"
+
+          - label: "معرّف Google Analytics (GA4)"
+            name: ga_id
+            widget: string
+            hint: "مثال: G-XXXXXXXXXX"
+            default: "G-XXXXXXXXXX"
+
+          - label: "كلمة مرور المسؤول"
+            name: admin_password
+            widget: string
+            hint: "⚠️ تحذير: هذا الحقل محفوظ في GitHub. استخدم كلمة مرور غير حساسة."
+            default: "AdminMohamed2024"

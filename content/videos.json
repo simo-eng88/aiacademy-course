@@ -1,0 +1,16 @@
+{
+  "days": [
+    { "dayId": "day1",  "dayLabel": "اليوم الأول",        "videos": [] },
+    { "dayId": "day2",  "dayLabel": "اليوم الثاني",       "videos": [] },
+    { "dayId": "day3",  "dayLabel": "اليوم الثالث",       "videos": [] },
+    { "dayId": "day4",  "dayLabel": "اليوم الرابع",       "videos": [] },
+    { "dayId": "day5",  "dayLabel": "اليوم الخامس",       "videos": [] },
+    { "dayId": "day6",  "dayLabel": "اليوم السادس",       "videos": [] },
+    { "dayId": "day7",  "dayLabel": "اليوم السابع",       "videos": [] },
+    { "dayId": "day8",  "dayLabel": "اليوم الثامن",       "videos": [] },
+    { "dayId": "day9",  "dayLabel": "اليوم التاسع",       "videos": [] },
+    { "dayId": "day10", "dayLabel": "اليوم العاشر",       "videos": [] },
+    { "dayId": "day11", "dayLabel": "اليوم الحادي عشر",   "videos": [] },
+    { "dayId": "day12", "dayLabel": "اليوم الثاني عشر",   "videos": [] }
+  ]
+}

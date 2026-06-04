@@ -444,6 +444,8 @@ body.admin-on #admin-badge{display:flex}
 .admin-lockout p{color:var(--danger);font-weight:700;font-size:15px;margin-bottom:8px}
 .admin-lockout #lockout-timer{font-size:28px;font-weight:800;color:var(--danger);font-variant-numeric:tabular-nums}
 #login-attempts-left{font-size:12px;color:var(--text3);margin-top:8px;display:none}
+#admin-bar .admin-cms-link{background:rgba(59,130,246,.3);color:#fff;border-radius:8px;padding:8px 15px;font-size:13px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-family:inherit;transition:var(--transition)}
+#admin-bar .admin-cms-link:hover{background:var(--accent);box-shadow:0 2px 8px rgba(59,130,246,.4)}
 </style>
 </head>
 <body>
@@ -608,6 +610,7 @@ body.admin-on #admin-badge{display:flex}
   <button id="admin-edit-toggle" title="تعديل المحتوى"><span data-ar="✏️ تعديل" data-en="✏️ Edit">✏️ تعديل</span></button>
   <button id="admin-add-video-btn" title="إضافة فيديو"><span data-ar="➕ إضافة" data-en="➕ Add">➕ إضافة</span></button>
   <button id="admin-settings-btn" title="الإعدادات"><span data-ar="⚙️ إعدادات" data-en="⚙️ Settings">⚙️ إعدادات</span></button>
+  <a href="/admin/" target="_blank" class="admin-cms-link" data-tooltip="لوحة إدارة المحتوى الكاملة"><i class="ti ti-layout-dashboard"></i> <span data-ar="لوحة CMS" data-en="CMS Panel">لوحة CMS</span></a>
   <span id="admin-session-timer" style="font-size:11px;opacity:.7;margin-inline-start:6px"></span>
   <button class="ab-logout" id="admin-logout"><i class="ti ti-logout"></i> <span data-ar="🚪 خروج" data-en="🚪 Logout">🚪 خروج</span></button>
 </div>
@@ -1529,6 +1532,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   loadCompletions(); loadTheme(); applyEdits(); buildSearchIndex();
   applyStaticLang(); updateLangButtons();
   setupEvents(); updateProgressBar(); /* FAQ bot is lazy-init on first open */
+  loadCmsContent(); /* async: loads content/videos.json + content/sites.json */
 });
 
 // ===== LANGUAGE SWITCHER =====
@@ -1729,6 +1733,7 @@ function defaultVideos(){
   return parts.map((p,i)=>({part:shorts[i],title:p,dur:'00:00',topic:'—',link:'#'}));
 }
 function getVideos(dayId){
+  if(window._cmsVideos&&window._cmsVideos[dayId])return window._cmsVideos[dayId];
   try{const v=JSON.parse(localStorage.getItem('videos_'+dayId));if(v&&v.length)return v;}catch(e){}
   return defaultVideos();
 }
@@ -1964,6 +1969,55 @@ function applyEdits(){
     if(saved!==null)el.innerHTML=saved;
   });
 }
+
+/* ===== CMS CONTENT LOADER (content/videos.json + content/sites.json) ===== */
+window._cmsVideos={};
+async function loadCmsContent(){
+  // Load videos from Decap CMS — overrides localStorage per day
+  try{
+    const vr=await fetch('./content/videos.json');
+    if(vr.ok){
+      const vd=await vr.json();
+      if(vd&&vd.days){
+        vd.days.forEach(d=>{
+          if(d.videos&&d.videos.length>0){
+            window._cmsVideos[d.dayId]=d.videos.map(v=>({
+              part:v.part,title:v.title,
+              dur:v.duration||v.dur||'00:00',
+              topic:v.topic||'—',link:v.link||'#'
+            }));
+          }
+        });
+        if(DAYS.find(d=>d.id===currentSection))renderVideos(currentSection);
+      }
+    }
+  }catch(e){}
+  // Load sites from Decap CMS — merges into SITES / SITES_EN
+  try{
+    const sr=await fetch('./content/sites.json');
+    if(sr.ok){
+      const sd=await sr.json();
+      if(sd&&sd.tools&&sd.tools.length>0){
+        sd.tools.forEach(t=>{
+          if(!t.name||!t.domain)return;
+          SITES[t.name]={
+            domain:t.domain,
+            cat:t.category_ar||(SITES[t.name]&&SITES[t.name].cat)||'',
+            benefit:t.benefit_ar||(SITES[t.name]&&SITES[t.name].benefit)||'',
+            usage:t.usage_ar||(SITES[t.name]&&SITES[t.name].usage)||''
+          };
+          SITES_EN[t.name]={
+            cat:t.category_en||(SITES_EN[t.name]&&SITES_EN[t.name].cat)||'',
+            benefit:t.benefit_en||(SITES_EN[t.name]&&SITES_EN[t.name].benefit)||'',
+            usage:t.usage_en||(SITES_EN[t.name]&&SITES_EN[t.name].usage)||''
+          };
+        });
+        buildGuide();buildSearchIndex();
+      }
+    }
+  }catch(e){}
+}
+
 function openAdminSettings(){
   renderAdminFaqList();
   document.getElementById('admin-settings-modal').classList.add('open');
