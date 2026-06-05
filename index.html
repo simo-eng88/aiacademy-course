@@ -446,6 +446,48 @@ body.admin-on #admin-badge{display:flex}
 #login-attempts-left{font-size:12px;color:var(--text3);margin-top:8px;display:none}
 #admin-bar .admin-cms-link{background:rgba(59,130,246,.3);color:#fff;border-radius:8px;padding:8px 15px;font-size:13px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-family:inherit;transition:var(--transition)}
 #admin-bar .admin-cms-link:hover{background:var(--accent);box-shadow:0 2px 8px rgba(59,130,246,.4)}
+/* ===== PROJECT IDEAS ===== */
+.project-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px;margin-top:20px}
+.project-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow2);transition:transform var(--transition),box-shadow var(--transition);display:flex;flex-direction:column}
+.project-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.pc-header{padding:16px 18px;color:#fff;display:flex;align-items:center;gap:12px}
+.pc-emoji{font-size:28px;flex-shrink:0}
+.pc-title{font-size:15px;font-weight:800;line-height:1.3;margin-bottom:5px}
+.pc-income{display:inline-flex;align-items:center;gap:4px;background:rgba(255,255,255,.22);border-radius:20px;padding:3px 11px;font-size:11.5px;font-weight:700}
+.pc-body{padding:14px 16px;flex:1;display:flex;flex-direction:column}
+.pc-desc{font-size:13.5px;color:var(--text2);margin-bottom:12px;line-height:1.6}
+.pc-label{font-size:10.5px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;color:var(--text3);margin:10px 0 6px;display:flex;align-items:center;gap:5px}
+.pc-label.new-label{color:#f97316}
+.pc-chips{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+.pc-chip{border-radius:7px;padding:3px 9px;font-size:12px;font-weight:700}
+.pc-chip.course{background:rgba(59,130,246,.1);color:var(--accent);border:1px solid rgba(59,130,246,.22)}
+a.pc-chip.new-site{background:rgba(249,115,22,.09);color:#f97316;border:1px solid rgba(249,115,22,.28);text-decoration:none;display:inline-flex;align-items:center;gap:3px;transition:var(--transition)}
+a.pc-chip.new-site:hover{background:rgba(249,115,22,.2);transform:translateY(-1px)}
+.pc-steps{margin-top:auto;padding-top:12px;border-top:1px solid var(--border)}
+.pc-step{display:flex;gap:9px;padding:4px 0;font-size:13px;color:var(--text2);align-items:flex-start}
+.pc-step-num{min-width:21px;height:21px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.pc-disclaimer{background:rgba(249,115,22,.07);border:1px solid rgba(249,115,22,.22);border-radius:12px;padding:13px 16px;margin-bottom:18px;font-size:13px;color:var(--text2);display:flex;gap:10px;align-items:flex-start;line-height:1.6}
+/* ===== ANALYTICS MODAL ===== */
+#admin-analytics-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(4px);z-index:1600;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto}
+#admin-analytics-modal.open{display:flex;animation:fadeIn .2s ease}
+.analytics-box{background:var(--bg2);border-radius:18px;padding:26px;max-width:760px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.4);border:2px solid var(--accent);margin:auto}
+.analytics-box h2{font-size:17px;font-weight:800;color:var(--accent);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.ana-stats-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px;margin-bottom:18px}
+.ana-stat{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center}
+.ana-stat .as-num{font-size:26px;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.ana-stat .as-lbl{font-size:11px;color:var(--text3);margin-top:3px}
+.ana-tbl-wrap{overflow-x:auto;border-radius:10px;border:1px solid var(--border);margin-bottom:14px;max-height:240px;overflow-y:auto}
+.ana-tbl{width:100%;border-collapse:collapse;font-size:12.5px;min-width:480px}
+.ana-tbl th{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;padding:9px 12px;text-align:right;font-weight:700;position:sticky;top:0;z-index:1}
+.ana-tbl td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2)}
+.ana-tbl tbody tr:hover{background:rgba(59,130,246,.06)}
+.ana-note{background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.25);border-radius:10px;padding:12px 14px;font-size:12.5px;color:var(--text3);margin-bottom:14px;line-height:1.6}
+.ana-section{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:14px}
+.ana-section h3{font-size:13.5px;font-weight:800;color:var(--text);margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.ana-btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.btn-info{background:rgba(14,165,233,.15);color:#0ea5e9;border:1px solid rgba(14,165,233,.3);border-radius:10px;padding:9px 18px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;transition:var(--transition);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.btn-info:hover{background:#0ea5e9;color:#fff}
+@media(max-width:480px){.project-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -490,6 +532,10 @@ body.admin-on #admin-badge{display:flex}
     <div class="sidebar-day-header" data-ar="مراجع" data-en="References">مراجع</div>
     <div class="sidebar-item" data-target="guide"><span>📚</span><span data-ar="دليل المواقع والأدوات" data-en="Tools &amp; Sites Guide">دليل المواقع والأدوات</span></div>
   </div>
+  <div class="sidebar-section">
+    <div class="sidebar-day-header" data-ar="📈 الربح من الذكاء الاصطناعي" data-en="📈 AI Monetisation">📈 الربح من الذكاء الاصطناعي</div>
+    <div class="sidebar-item" data-target="projects"><span>💡</span><span data-ar="أفكار مشاريع مربحة" data-en="Profitable Project Ideas">أفكار مشاريع مربحة</span></div>
+  </div>
 </aside>
 
 <div id="overlay"></div>
@@ -503,7 +549,7 @@ body.admin-on #admin-badge{display:flex}
         <h1 data-ar="أكاديمية الذكاء الاصطناعي — الدفعة الثامنة" data-en="AI Academy — Cohort 8">أكاديمية الذكاء الاصطناعي — الدفعة الثامنة</h1>
         <p data-ar="دورة عملية مكثّفة على مدار ١٢ يومًا بقيادة <strong>د. محمد أنصاري</strong>، تغطّي أحدث أدوات الذكاء الاصطناعي، والأتمتة، والبحث العلمي، والإبداع، والبرمجة بأسلوب Vibe Coding — من ChatGPT إلى Manus وما بعدهما." data-en="An intensive 12-day hands-on course led by <strong>Dr. Mohamed Ansary</strong>, covering the latest AI tools, automation, academic research, creativity and Vibe Coding — from ChatGPT to Manus and beyond.">دورة عملية مكثّفة على مدار ١٢ يومًا بقيادة <strong>د. محمد أنصاري</strong>، تغطّي أحدث أدوات الذكاء الاصطناعي، والأتمتة، والبحث العلمي، والإبداع، والبرمجة بأسلوب Vibe Coding — من ChatGPT إلى Manus وما بعدهما.</p>
         <div class="hero-stats">
-          <div class="hero-stat"><div class="hero-stat-num" data-ar="١٣" data-en="13">١٣</div><div class="hero-stat-label" data-ar="يومًا" data-en="Days">يومًا</div></div>
+          <div class="hero-stat"><div class="hero-stat-num" data-ar="١٤" data-en="14">١٤</div><div class="hero-stat-label" data-ar="يومًا" data-en="Days">يومًا</div></div>
           <div class="hero-stat"><div class="hero-stat-num" data-ar="+٥٠" data-en="50+">+٥٠</div><div class="hero-stat-label" data-ar="أداة" data-en="Tools">أداة</div></div>
           <div class="hero-stat"><div class="hero-stat-num">2026</div><div class="hero-stat-label" data-ar="دفعة يونيو" data-en="June Cohort">دفعة يونيو</div></div>
           <div class="hero-stat"><div class="hero-stat-num" data-ar="٨" data-en="8">٨</div><div class="hero-stat-label" data-ar="الدفعة" data-en="Cohort">الدفعة</div></div>
@@ -537,6 +583,235 @@ body.admin-on #admin-badge{display:flex}
           </table>
         </div>
       </div>
+    </section>
+
+    <!-- ===== PROFITABLE PROJECTS ===== -->
+    <section class="section" id="sec-projects">
+      <div class="day-banner" style="background:linear-gradient(135deg,#7c3aed,#db2777)">
+        <div class="b-icon">💡</div>
+        <h1 data-ar="أفكار مشاريع مربحة بالذكاء الاصطناعي" data-en="Profitable AI Project Ideas">أفكار مشاريع مربحة بالذكاء الاصطناعي</h1>
+        <div class="b-sub" data-ar="١٠ مشاريع حقيقية يمكنك بدؤها اليوم بالأدوات التي تعلّمتها" data-en="10 real projects you can start today with the tools you've learned">١٠ مشاريع حقيقية يمكنك بدؤها اليوم بالأدوات التي تعلّمتها</div>
+      </div>
+
+      <div class="pc-disclaimer">
+        <span style="font-size:20px;flex-shrink:0">🔶</span>
+        <div><strong data-ar="ملاحظة:" data-en="Note:">ملاحظة:</strong>
+        <span data-ar=" الأدوات المميّزة بـ 🆕 لم تُذكر في الكورس، لكنها مقترحة كأدوات تكميلية لتعزيز كل مشروع." data-en=" Tools marked 🆕 were not covered in the course — they are suggested as complementary tools to strengthen each project."> الأدوات المميّزة بـ 🆕 لم تُذكر في الكورس، لكنها مقترحة كأدوات تكميلية لتعزيز كل مشروع.</span></div>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- 1 -->
+        <div class="project-card">
+          <div class="pc-header" style="background:linear-gradient(135deg,#2563eb,#4f46e5)">
+            <span class="pc-emoji">🤖</span>
+            <div><div class="pc-title" data-ar="بوت دعم العملاء الذكي" data-en="Smart Customer Support Bot">بوت دعم العملاء الذكي</div>
+            <span class="pc-income" data-ar="💰 $200 – $1,500 / شهر" data-en="💰 $200 – $1,500 / mo">💰 $200 – $1,500 / شهر</span></div>
+          </div>
+          <div class="pc-body">
+            <p class="pc-desc" data-ar="بناء بوت ذكي يردّ على استفسارات العملاء تلقائياً على Telegram أو الموقع. يُقلّل عبء الدعم بنسبة 70٪ ويعمل 24/7 بدون إشراف بشري." data-en="Build an AI bot that answers customer queries automatically on Telegram or a website, reducing support load by 70% and running 24/7.">بناء بوت ذكي يردّ على استفسارات العملاء تلقائياً على Telegram أو الموقع. يُقلّل عبء الدعم بنسبة 70٪ ويعمل 24/7 بدون إشراف بشري.</p>
+            <div class="pc-label" data-ar="⚙️ أدوات من الكورس" data-en="⚙️ Course tools">⚙️ أدوات من الكورس</div>
+            <div class="pc-chips"><span class="pc-chip course">ChatGPT</span><span class="pc-chip course">Zapier</span><span class="pc-chip course">Telegram</span><span class="pc-chip course">n8n</span></div>
+            <div class="pc-label new-label" data-ar="🆕 مواقع مقترحة" data-en="🆕 Suggested sites">🆕 مواقع مقترحة</div>
+            <div class="pc-chips"><a class="pc-chip new-site" href="https://botpress.com" target="_blank" rel="noopener">🆕 Botpress.com</a><a class="pc-chip new-site" href="https://tidio.com" target="_blank" rel="noopener">🆕 Tidio.com</a><a class="pc-chip new-site" href="https://crisp.chat" target="_blank" rel="noopener">🆕 Crisp.chat</a></div>
+            <div class="pc-steps">
+              <div class="pc-step"><span class="pc-step-num">١</span><span data-ar="ابنِ بوتًا على ChatGPT مخصصًا لنوع نشاط تجاري (مطعم، عيادة، متجر)" data-en="Build a ChatGPT bot customised for a business type (restaurant, clinic, store)">ابنِ بوتًا على ChatGPT مخصصًا لنوع نشاط تجاري (مطعم، عيادة، متجر)</span></div>
+              <div class="pc-step"><span class="pc-step-num">٢</span><span data-ar="اربطه بـ Telegram عبر Zapier وجهّزه للردود التلقائية" data-en="Connect it to Telegram via Zapier and configure auto-replies">اربطه بـ Telegram عبر Zapier وجهّزه للردود التلقائية</span></div>
+              <div class="pc-step"><span class="pc-step-num">٣</span><span data-ar="قدّم الخدمة لأصحاب الأعمال بـ $100–$300/شهر كاشتراك" data-en="Offer the service to business owners at $100–$300/month subscription">قدّم الخدمة لأصحاب الأعمال بـ $100–$300/شهر كاشتراك</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="project-card">
+          <div class="pc-header" style="background:linear-gradient(135deg,#0891b2,#0284c7)">
+            <span class="pc-emoji">✍️</span>
+            <div><div class="pc-title" data-ar="خدمة كتابة محتوى احترافي" data-en="AI Content Writing Service">خدمة كتابة محتوى احترافي</div>
+            <span class="pc-income" data-ar="💰 $300 – $2,000 / شهر" data-en="💰 $300 – $2,000 / mo">💰 $300 – $2,000 / شهر</span></div>
+          </div>
+          <div class="pc-body">
+            <p class="pc-desc" data-ar="كتابة مقالات، تغريدات، بوستات، إعلانات، ونشرات بريدية لأصحاب الأعمال والشركات. اختصص في تخصص واحد (عقاري، صحي، تقني) لرفع السعر." data-en="Write articles, social posts, ads and newsletters for businesses. Specialise in one niche (real estate, medical, tech) to command premium rates.">كتابة مقالات، تغريدات، بوستات، إعلانات، ونشرات بريدية لأصحاب الأعمال والشركات. اختصص في تخصص واحد لرفع السعر.</p>
+            <div class="pc-label" data-ar="⚙️ أدوات من الكورس" data-en="⚙️ Course tools">⚙️ أدوات من الكورس</div>
+            <div class="pc-chips"><span class="pc-chip course">ChatGPT</span><span class="pc-chip course">Claude</span><span class="pc-chip course">Canva</span><span class="pc-chip course">Perplexity</span></div>
+            <div class="pc-label new-label" data-ar="🆕 مواقع مقترحة" data-en="🆕 Suggested sites">🆕 مواقع مقترحة</div>
+            <div class="pc-chips"><a class="pc-chip new-site" href="https://beehiiv.com" target="_blank" rel="noopener">🆕 Beehiiv.com</a><a class="pc-chip new-site" href="https://substack.com" target="_blank" rel="noopener">🆕 Substack.com</a><a class="pc-chip new-site" href="https://writesonic.com" target="_blank" rel="noopener">🆕 Writesonic.com</a></div>
+            <div class="pc-steps">
+              <div class="pc-step"><span class="pc-step-num">١</span><span data-ar="اختر تخصصًا (عقاري / صحي / سياحي) وابنِ معرض 5 نماذج" data-en="Choose a niche (real estate / medical / travel) and build a 5-sample portfolio">اختر تخصصًا وابنِ معرض 5 نماذج كتابية نشره على Notion</span></div>
+              <div class="pc-step"><span class="pc-step-num">٢</span><span data-ar="سجّل على Fiverr وEasyClaw وقدّم 3 خدمات بسعر تجريبي" data-en="Register on Fiverr and EasyClaw, offer 3 services at an introductory price">سجّل على Fiverr وEasyClaw وقدّم 3 خدمات بسعر تجريبي</span></div>
+              <div class="pc-step"><span class="pc-step-num">٣</span><span data-ar="بعد 5 تقييمات، ارفع السعر وحوّل العملاء لاشتراك شهري" data-en="After 5 reviews, raise prices and convert clients to monthly retainers">بعد 5 تقييمات، ارفع السعر وحوّل العملاء لاشتراك شهري</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="project-card">
+          <div class="pc-header" style="background:linear-gradient(135deg,#059669,#0d9488)">
+            <span class="pc-emoji">📊</span>
+            <div><div class="pc-title" data-ar="لوحات معلومات ذكية للأعمال" data-en="AI Business Dashboards">لوحات معلومات ذكية للأعمال</div>
+            <span class="pc-income" data-ar="💰 $500 – $5,000 / مشروع" data-en="💰 $500 – $5,000 / project">💰 $500 – $5,000 / مشروع</span></div>
+          </div>
+          <div class="pc-body">
+            <p class="pc-desc" data-ar="بناء لوحات تفاعلية تعرض مؤشرات الأداء الرئيسية للشركات (المبيعات، الحضور، الإنتاجية). طلب كبير من الشركات الصغيرة التي لا تقدر على برامج الـ BI التقليدية." data-en="Build interactive dashboards displaying KPIs for businesses (sales, attendance, productivity). High demand from SMEs who can't afford traditional BI software.">بناء لوحات تفاعلية تعرض مؤشرات الأداء الرئيسية للشركات. طلب كبير من الشركات الصغيرة التي لا تستطيع شراء برامج BI تقليدية.</p>
+            <div class="pc-label" data-ar="⚙️ أدوات من الكورس" data-en="⚙️ Course tools">⚙️ أدوات من الكورس</div>
+            <div class="pc-chips"><span class="pc-chip course">Claude Artifacts</span><span class="pc-chip course">Canva AI Code</span><span class="pc-chip course">Lovable</span><span class="pc-chip course">ChatGPT</span></div>
+            <div class="pc-label new-label" data-ar="🆕 مواقع مقترحة" data-en="🆕 Suggested sites">🆕 مواقع مقترحة</div>
+            <div class="pc-chips"><a class="pc-chip new-site" href="https://retool.com" target="_blank" rel="noopener">🆕 Retool.com</a><a class="pc-chip new-site" href="https://databox.com" target="_blank" rel="noopener">🆕 Databox.com</a><a class="pc-chip new-site" href="https://klipfolio.com" target="_blank" rel="noopener">🆕 Klipfolio.com</a></div>
+            <div class="pc-steps">
+              <div class="pc-step"><span class="pc-step-num">١</span><span data-ar="ابنِ 3 نماذج: مطعم / عيادة / متجر إلكتروني بـ Claude Artifacts" data-en="Build 3 demo dashboards: restaurant / clinic / e-shop using Claude Artifacts">ابنِ 3 نماذج: مطعم / عيادة / متجر بـ Claude Artifacts</span></div>
+              <div class="pc-step"><span class="pc-step-num">٢</span><span data-ar="نشر النماذج على LinkedIn مع فيديو توضيحي قصير" data-en="Publish the demos on LinkedIn with a short explainer video">انشر النماذج على LinkedIn مع فيديو توضيحي 60 ثانية</span></div>
+              <div class="pc-step"><span class="pc-step-num">٣</span><span data-ar="قدّم خدمة «لوحة مخصصة» بـ $300–$800 لكل لوحة" data-en="Offer a 'custom dashboard' service at $300–$800 per dashboard">قدّم خدمة «لوحة مخصصة» بـ $300–$800 / لوحة</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="project-card">
+          <div class="pc-header" style="background:linear-gradient(135deg,#d97706,#f97316)">
+            <span class="pc-emoji">🎓</span>
+            <div><div class="pc-title" data-ar="تدريب الموظفين على الذكاء الاصطناعي" data-en="Corporate AI Training">تدريب الموظفين على الذكاء الاصطناعي</div>
+            <span class="pc-income" data-ar="💰 $300 – $3,000 / جلسة" data-en="💰 $300 – $3,000 / session">💰 $300 – $3,000 / جلسة</span></div>
+          </div>
+          <div class="pc-body">
+            <p class="pc-desc" data-ar="تدريب فرق العمل في الشركات على استخدام أدوات الذكاء الاصطناعي لتحسين إنتاجيتهم. الطلب في ارتفاع مستمر والشركات تدفع جيدًا لمن يُبسّط التقنية." data-en="Train corporate teams on AI tools to boost productivity. Demand is rising sharply and companies pay well for trainers who can demystify AI.">تدريب فرق العمل في الشركات على استخدام أدوات الذكاء الاصطناعي. الطلب في ارتفاع مستمر والشركات تدفع جيدًا لمن يُبسّط التقنية.</p>
+            <div class="pc-label" data-ar="⚙️ أدوات من الكورس" data-en="⚙️ Course tools">⚙️ أدوات من الكورس</div>
+            <div class="pc-chips"><span class="pc-chip course">Notion</span><span class="pc-chip course">ChatGPT</span><span class="pc-chip course">Canva</span><span class="pc-chip course">NotebookLM</span></div>
+            <div class="pc-label new-label" data-ar="🆕 مواقع مقترحة" data-en="🆕 Suggested sites">🆕 مواقع مقترحة</div>
+            <div class="pc-chips"><a class="pc-chip new-site" href="https://teachable.com" target="_blank" rel="noopener">🆕 Teachable.com</a><a class="pc-chip new-site" href="https://podia.com" target="_blank" rel="noopener">🆕 Podia.com</a><a class="pc-chip new-site" href="https://cal.com" target="_blank" rel="noopener">🆕 Cal.com</a></div>
+            <div class="pc-steps">
+              <div class="pc-step"><span class="pc-step-num">١</span><span data-ar="حوّل محتوى الدورة إلى حزمة تدريب جاهزة (Notion + Canva)" data-en="Convert course content into a ready training package (Notion + Canva)">حوّل محتوى الدورة إلى حزمة تدريب جاهزة في Notion وCanva</span></div>
+              <div class="pc-step"><span class="pc-step-num">٢</span><span data-ar="قدّم جلسة تجريبية مجانية لإحدى الشركات واطلب testimonial" data-en="Offer a free pilot session to a company and request a testimonial">قدّم جلسة تجريبية مجانية لإحدى الشركات واطلب شهادة</span></div>
+              <div class="pc-step"><span class="pc-step-num">٣</span><span data-ar="ابنِ باقات 4 جلسات + دعم شهري + حساب Notion للفريق" data-en="Build 4-session packages + monthly support + team Notion account">ابنِ باقات 4 جلسات + دعم شهري + حساب Notion للفريق</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="project-card">
+          <div class="pc-header" style="background:linear-gradient(135deg,#7c3aed,#a855f7)">
+            <span class="pc-emoji">🌐</span>
+            <div><div class="pc-title" data-ar="خدمة ترجمة متخصصة بالذكاء الاصطناعي" data-en="Specialised AI Translation Service">خدمة ترجمة متخصصة بالذكاء الاصطناعي</div>
+            <span class="pc-income" data-ar="💰 $0.05 – $0.15 / كلمة" data-en="💰 $0.05 – $0.15 / word">💰 $0.05 – $0.15 / كلمة</span></div>
+          </div>
+          <div class="pc-body">
+            <p class="pc-desc" data-ar="ترجمة متخصصة في مجال بعينه (قانوني، طبي، تقني). ليس مجرد ترجمة عامة بل ترجمة دقيقة بمصطلحات التخصص. سعر أعلى بكثير من الترجمة العادية." data-en="Specialised translation in one domain (legal, medical, tech). Precise terminology-aware translation commands rates 3–5× higher than general translation.">ترجمة متخصصة في مجال بعينه (قانوني، طبي، تقني). ليس مجرد ترجمة عامة بل ترجمة دقيقة بمصطلحات التخصص.</p>
+            <div class="pc-label" data-ar="⚙️ أدوات من الكورس" data-en="⚙️ Course tools">⚙️ أدوات من الكورس</div>
+            <div class="pc-chips"><span class="pc-chip course">MateCat</span><span class="pc-chip course">Reverso</span><span class="pc-chip course">Claude</span><span class="pc-chip course">Trinka</span></div>
+            <div class="pc-label new-label" data-ar="🆕 مواقع مقترحة" data-en="🆕 Suggested sites">🆕 مواقع مقترحة</div>
+            <div class="pc-chips"><a class="pc-chip new-site" href="https://proz.com" target="_blank" rel="noopener">🆕 ProZ.com</a><a class="pc-chip new-site" href="https://gengo.com" target="_blank" rel="noopener">🆕 Gengo.com</a><a class="pc-chip new-site" href="https://one-hour-translation.com" target="_blank" rel="noopener">🆕 OneHourTranslation</a></div>
+            <div class="pc-steps">
+              <div class="pc-step"><span class="pc-step-num">١</span><span data-ar="اختر تخصصًا واحدًا وابنِ قاموس مصطلحات في MateCat" data-en="Choose one specialisation and build a term glossary in MateCat">اختر تخصصًا واحدًا وابنِ قاموس مصطلحات في MateCat</span></div>
+              <div class="pc-step"><span class="pc-step-num">٢</span><span data-ar="سجّل في ProZ وأضف شهادة اختبار التخصص" data-en="Register on ProZ and add your specialisation test certificate">سجّل في ProZ واجتز اختبار التخصص للحصول على شارة</span></div>
+              <div class="pc-step"><span class="pc-step-num">٣</span><span data-ar="تواصل مع مكاتب ترجمة مباشرة لعقود طويلة الأجل" data-en="Contact translation agencies directly for long-term contracts">تواصل مع مكاتب ترجمة مباشرة لعقود طويلة الأجل</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="project-card">
+          <div class="pc-header" style="background:linear-gradient(135deg,#be185d,#e11d48)">
+            <span class="pc-emoji">🎙️</span>
+            <div><div class="pc-title" data-ar="تفريغ وتلخيص المحتوى الصوتي" data-en="Audio Transcription & Summarisation">تفريغ وتلخيص المحتوى الصوتي</div>
+            <span class="pc-income" data-ar="💰 $200 – $800 / شهر" data-en="💰 $200 – $800 / mo">💰 $200 – $800 / شهر</span></div>
+          </div>
+          <div class="pc-body">
+            <p class="pc-desc" data-ar="تحويل المحاضرات والمقابلات والبودكاست إلى نص مُنقَّح + ملخص + نقاط رئيسية + بودكاست مضغوط. مثالي للجامعات والصحفيين والمدرّبين." data-en="Convert lectures, interviews and podcasts into polished text + summary + key points + compressed audio. Ideal for universities, journalists and coaches.">تحويل المحاضرات والمقابلات إلى نص + ملخص + نقاط رئيسية. مثالي للجامعات والصحفيين والمدرّبين.</p>
+            <div class="pc-label" data-ar="⚙️ أدوات من الكورس" data-en="⚙️ Course tools">⚙️ أدوات من الكورس</div>
+            <div class="pc-chips"><span class="pc-chip course">TurboScribe</span><span class="pc-chip course">NotebookLM</span><span class="pc-chip course">ElevenLabs</span><span class="pc-chip course">Canva</span></div>
+            <div class="pc-label new-label" data-ar="🆕 مواقع مقترحة" data-en="🆕 Suggested sites">🆕 مواقع مقترحة</div>
+            <div class="pc-chips"><a class="pc-chip new-site" href="https://descript.com" target="_blank" rel="noopener">🆕 Descript.com</a><a class="pc-chip new-site" href="https://otter.ai" target="_blank" rel="noopener">🆕 Otter.ai</a><a class="pc-chip new-site" href="https://riverside.fm" target="_blank" rel="noopener">🆕 Riverside.fm</a></div>
+            <div class="pc-steps">
+              <div class="pc-step"><span class="pc-step-num">١</span><span data-ar="فرّغ محاضرة جامعية مجانًا وأرسلها للأستاذ كنموذج عمل" data-en="Transcribe a university lecture for free and send it to the professor as a work sample">فرّغ محاضرة جامعية مجانًا وأرسلها كنموذج</span></div>
+              <div class="pc-step"><span class="pc-step-num">٢</span><span data-ar="اعرض خدمة «تفريغ + ملخص + بودكاست» بسعر واحد" data-en="Offer a 'transcription + summary + podcast' bundle at one price">اعرض حزمة «تفريغ + ملخص + بودكاست» بسعر واحد</span></div>
+              <div class="pc-step"><span class="pc-step-num">٣</span><span data-ar="استهدف القنوات التعليمية على YouTube الراغبة في ترجمة محتواها" data-en="Target educational YouTube channels looking to caption/transcribe their content">استهدف قنوات YouTube التعليمية للترجمة والتلخيص</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="project-card">
+          <div class="pc-header" style="background:linear-gradient(135deg,#0f766e,#0891b2)">
+            <span class="pc-emoji">💻</span>
+            <div><div class="pc-title" data-ar="تطوير تطبيقات Vibe Coding" data-en="Vibe Coding App Development">تطوير تطبيقات Vibe Coding</div>
+            <span class="pc-income" data-ar="💰 $500 – $10,000 / مشروع" data-en="💰 $500 – $10,000 / project">💰 $500 – $10,000 / مشروع</span></div>
+          </div>
+          <div class="pc-body">
+            <p class="pc-desc" data-ar="بناء تطبيقات ويب بسيطة بالوصف اللغوي وبيعها لأصحاب الأعمال. نماذج: حاسبة تسعير، نظام حجز مواعيد، قائمة طعام تفاعلية، متجر بسيط." data-en="Build simple web apps by description and sell them to business owners: pricing calculators, booking systems, interactive menus, simple stores.">بناء تطبيقات ويب بسيطة وبيعها. نماذج: حاسبة تسعير، نظام حجز مواعيد، قائمة طعام تفاعلية.</p>
+            <div class="pc-label" data-ar="⚙️ أدوات من الكورس" data-en="⚙️ Course tools">⚙️ أدوات من الكورس</div>
+            <div class="pc-chips"><span class="pc-chip course">Lovable</span><span class="pc-chip course">Base44</span><span class="pc-chip course">Replit</span><span class="pc-chip course">Claude</span></div>
+            <div class="pc-label new-label" data-ar="🆕 مواقع مقترحة" data-en="🆕 Suggested sites">🆕 مواقع مقترحة</div>
+            <div class="pc-chips"><a class="pc-chip new-site" href="https://appsumo.com" target="_blank" rel="noopener">🆕 AppSumo.com</a><a class="pc-chip new-site" href="https://gumroad.com" target="_blank" rel="noopener">🆕 Gumroad.com</a><a class="pc-chip new-site" href="https://producthunt.com" target="_blank" rel="noopener">🆕 ProductHunt.com</a></div>
+            <div class="pc-steps">
+              <div class="pc-step"><span class="pc-step-num">١</span><span data-ar="ابنِ تطبيقًا يحل مشكلة يومية تواجهها أنت وشاركه مجانًا" data-en="Build an app that solves a daily problem you face and share it for free">ابنِ تطبيقًا يحل مشكلة يومية وشاركه مجانًا للحصول على تقييمات</span></div>
+              <div class="pc-step"><span class="pc-step-num">٢</span><span data-ar="أطلقه على ProductHunt واجمع المستخدمين الأوائل" data-en="Launch on ProductHunt and gather early adopters">أطلقه على ProductHunt واجمع مستخدمين أوائل</span></div>
+              <div class="pc-step"><span class="pc-step-num">٣</span><span data-ar="قدّم نسخة مخصصة لكل عميل بـ $300–$1,000" data-en="Offer a customised version for each client at $300–$1,000">قدّم نسخة مخصصة لكل عميل بـ $300–$1,000</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="project-card">
+          <div class="pc-header" style="background:linear-gradient(135deg,#0369a1,#4f46e5)">
+            <span class="pc-emoji">📱</span>
+            <div><div class="pc-title" data-ar="إدارة وسائل التواصل الاجتماعي" data-en="Social Media Management">إدارة وسائل التواصل الاجتماعي</div>
+            <span class="pc-income" data-ar="💰 $300 – $1,500 / شهر / عميل" data-en="💰 $300 – $1,500 / mo / client">💰 $300 – $1,500 / شهر / عميل</span></div>
+          </div>
+          <div class="pc-body">
+            <p class="pc-desc" data-ar="إدارة حسابات Instagram وLinkedIn وX لأصحاب الأعمال. إنشاء المحتوى تلقائيًا، جدولته، والردّ على التعليقات. يمكنك إدارة 5–8 عملاء في نفس الوقت." data-en="Manage Instagram, LinkedIn and X accounts for businesses: auto-create content, schedule it, respond to comments. You can handle 5–8 clients simultaneously.">إدارة حسابات Instagram وLinkedIn لأصحاب الأعمال. إنشاء المحتوى تلقائيًا وجدولته. يمكنك إدارة 5–8 عملاء في آنٍ واحد.</p>
+            <div class="pc-label" data-ar="⚙️ أدوات من الكورس" data-en="⚙️ Course tools">⚙️ أدوات من الكورس</div>
+            <div class="pc-chips"><span class="pc-chip course">ChatGPT</span><span class="pc-chip course">Canva</span><span class="pc-chip course">Zapier</span><span class="pc-chip course">Manus</span></div>
+            <div class="pc-label new-label" data-ar="🆕 مواقع مقترحة" data-en="🆕 Suggested sites">🆕 مواقع مقترحة</div>
+            <div class="pc-chips"><a class="pc-chip new-site" href="https://buffer.com" target="_blank" rel="noopener">🆕 Buffer.com</a><a class="pc-chip new-site" href="https://later.com" target="_blank" rel="noopener">🆕 Later.com</a><a class="pc-chip new-site" href="https://hootsuite.com" target="_blank" rel="noopener">🆕 Hootsuite.com</a></div>
+            <div class="pc-steps">
+              <div class="pc-step"><span class="pc-step-num">١</span><span data-ar="أدِر حساب شخص تعرفه مجانًا لمدة شهر وقس النتائج" data-en="Manage someone you know's account for free for a month and measure the results">أدِر حساب شخص تعرفه مجانًا لشهر وأظهر النتائج</span></div>
+              <div class="pc-step"><span class="pc-step-num">٢</span><span data-ar="ابنِ قوالب محتوى جاهزة لكل قطاع (مطاعم، عيادات، مدارس)" data-en="Build ready content templates for each sector (restaurants, clinics, schools)">ابنِ قوالب محتوى جاهزة لكل قطاع في Canva</span></div>
+              <div class="pc-step"><span class="pc-step-num">٣</span><span data-ar="قدّم 3 باقات: أساسية $300، معيارية $600، متقدمة $1,200" data-en="Offer 3 packages: basic $300, standard $600, advanced $1,200">قدّم 3 باقات: أساسية $300 — معيارية $600 — متقدمة $1,200</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="project-card">
+          <div class="pc-header" style="background:linear-gradient(135deg,#b45309,#92400e)">
+            <span class="pc-emoji">🔬</span>
+            <div><div class="pc-title" data-ar="مساعد البحث الأكاديمي" data-en="Academic Research Assistant">مساعد البحث الأكاديمي</div>
+            <span class="pc-income" data-ar="💰 $50 – $300 / بحث" data-en="💰 $50 – $300 / research">💰 $50 – $300 / بحث</span></div>
+          </div>
+          <div class="pc-body">
+            <p class="pc-desc" data-ar="مساعدة الباحثين والطلاب في مراجعة الأدبيات، استخراج المصادر، وتلخيص الأوراق العلمية. طلب عالٍ في موسمي الماجستير والدكتوراه." data-en="Help researchers and students with literature reviews, source extraction and paper summarisation. Demand peaks during postgraduate thesis seasons.">مساعدة الباحثين في مراجعة الأدبيات وتلخيص الأوراق العلمية. طلب عالٍ في مواسم الماجستير والدكتوراه.</p>
+            <div class="pc-label" data-ar="⚙️ أدوات من الكورس" data-en="⚙️ Course tools">⚙️ أدوات من الكورس</div>
+            <div class="pc-chips"><span class="pc-chip course">NotebookLM</span><span class="pc-chip course">Semantic Scholar</span><span class="pc-chip course">SciSpace</span><span class="pc-chip course">Consensus</span></div>
+            <div class="pc-label new-label" data-ar="🆕 مواقع مقترحة" data-en="🆕 Suggested sites">🆕 مواقع مقترحة</div>
+            <div class="pc-chips"><a class="pc-chip new-site" href="https://wyzant.com" target="_blank" rel="noopener">🆕 Wyzant.com</a><a class="pc-chip new-site" href="https://academia.edu" target="_blank" rel="noopener">🆕 Academia.edu</a><a class="pc-chip new-site" href="https://chegg.com" target="_blank" rel="noopener">🆕 Chegg.com</a></div>
+            <div class="pc-steps">
+              <div class="pc-step"><span class="pc-step-num">١</span><span data-ar="لخّص 3 أوراق بحثية في تخصصك وانشرها كنماذج مجانية" data-en="Summarise 3 research papers in your specialisation and publish as free samples">لخّص 3 أوراق في تخصصك وانشرها كنماذج مجانية</span></div>
+              <div class="pc-step"><span class="pc-step-num">٢</span><span data-ar="تواصل مع مجموعات طلاب الدراسات العليا على Telegram" data-en="Reach out to postgraduate student groups on Telegram">تواصل مع مجموعات طلاب الدراسات العليا على Telegram</span></div>
+              <div class="pc-step"><span class="pc-step-num">٣</span><span data-ar="قدّم خدمة «مراجعة أدبيات + خريطة ذهنية + ببليوغرافيا» كحزمة" data-en="Offer a 'literature review + mind map + bibliography' service as a bundle">قدّم «مراجعة أدبيات + خريطة ذهنية + ببليوغرافيا» كحزمة</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="project-card">
+          <div class="pc-header" style="background:linear-gradient(135deg,#1d4ed8,#7c3aed)">
+            <span class="pc-emoji">⚡</span>
+            <div><div class="pc-title" data-ar="أتمتة الأعمال المخصصة" data-en="Custom Business Automation">أتمتة الأعمال المخصصة</div>
+            <span class="pc-income" data-ar="💰 $500 – $3,000 / مشروع + صيانة" data-en="💰 $500 – $3,000 / project + retainer">💰 $500 – $3,000 / مشروع + صيانة</span></div>
+          </div>
+          <div class="pc-body">
+            <p class="pc-desc" data-ar="ربط الأنظمة وأتمتة سير العمل للشركات. أمثلة: إشعارات الطلبات تلقائيًا، إرسال الفواتير، مزامنة CRM، تقارير يومية على WhatsApp. عملاء متكرّرون ودخل مستدام." data-en="Connect systems and automate workflows for businesses: auto order notifications, invoice sending, CRM sync, daily WhatsApp reports. Recurring clients = steady income.">ربط الأنظمة وأتمتة سير العمل. أمثلة: إشعارات الطلبات، إرسال الفواتير، مزامنة CRM، تقارير يومية. دخل متكرّر ومستدام.</p>
+            <div class="pc-label" data-ar="⚙️ أدوات من الكورس" data-en="⚙️ Course tools">⚙️ أدوات من الكورس</div>
+            <div class="pc-chips"><span class="pc-chip course">Zapier</span><span class="pc-chip course">n8n</span><span class="pc-chip course">Make</span><span class="pc-chip course">Manus</span></div>
+            <div class="pc-label new-label" data-ar="🆕 مواقع مقترحة" data-en="🆕 Suggested sites">🆕 مواقع مقترحة</div>
+            <div class="pc-chips"><a class="pc-chip new-site" href="https://workato.com" target="_blank" rel="noopener">🆕 Workato.com</a><a class="pc-chip new-site" href="https://integrately.com" target="_blank" rel="noopener">🆕 Integrately.com</a><a class="pc-chip new-site" href="https://pabbly.com" target="_blank" rel="noopener">🆕 Pabbly.com</a></div>
+            <div class="pc-steps">
+              <div class="pc-step"><span class="pc-step-num">١</span><span data-ar="تخصص في نوع واحد: CRM أو فواتير أو تقارير واجعله قالبك" data-en="Specialise in one type: CRM, invoicing or reports and make it your template">تخصص في نوع واحد (CRM / فواتير / تقارير)</span></div>
+              <div class="pc-step"><span class="pc-step-num">٢</span><span data-ar="أتمت عملية في نشاطك التجاري الخاص وصوّرها فيديو 90 ثانية" data-en="Automate a process in your own business and record a 90-second demo video">أتمت عملية في نشاطك الخاص وصوّرها فيديو 90 ثانية</span></div>
+              <div class="pc-step"><span class="pc-step-num">٣</span><span data-ar="قدّم الخدمة بـ $500 إعداد + $100/شهر صيانة وتطوير" data-en="Price at $500 setup + $100/month maintenance and improvements">سعّر: $500 إعداد + $100/شهر صيانة وتطوير</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end project-grid -->
     </section>
 
   </div>
@@ -610,6 +885,7 @@ body.admin-on #admin-badge{display:flex}
   <button id="admin-edit-toggle" title="تعديل المحتوى"><span data-ar="✏️ تعديل" data-en="✏️ Edit">✏️ تعديل</span></button>
   <button id="admin-add-video-btn" title="إضافة فيديو"><span data-ar="➕ إضافة" data-en="➕ Add">➕ إضافة</span></button>
   <button id="admin-settings-btn" title="الإعدادات"><span data-ar="⚙️ إعدادات" data-en="⚙️ Settings">⚙️ إعدادات</span></button>
+  <button id="admin-analytics-btn" title="إحصائيات الزوار"><span data-ar="📊 إحصائيات" data-en="📊 Analytics">📊 إحصائيات</span></button>
   <a href="/admin/" target="_blank" class="admin-cms-link" data-tooltip="لوحة إدارة المحتوى الكاملة"><i class="ti ti-layout-dashboard"></i> <span data-ar="لوحة CMS" data-en="CMS Panel">لوحة CMS</span></a>
   <span id="admin-session-timer" style="font-size:11px;opacity:.7;margin-inline-start:6px"></span>
   <button class="ab-logout" id="admin-logout"><i class="ti ti-logout"></i> <span data-ar="🚪 خروج" data-en="🚪 Logout">🚪 خروج</span></button>
@@ -632,6 +908,75 @@ body.admin-on #admin-badge{display:flex}
         <button class="btn-warning" id="admin-export-faq">📥 <span data-ar="تصدير JSON" data-en="Export JSON">تصدير JSON</span></button>
         <button class="notes-btn clear" id="admin-settings-close" style="padding:9px 16px">✕ <span data-ar="إغلاق" data-en="Close">إغلاق</span></button>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- ANALYTICS MODAL -->
+<div id="admin-analytics-modal">
+  <div class="analytics-box">
+    <h2>📊 <span data-ar="لوحة إحصائيات الزوار" data-en="Visitor Analytics Dashboard">لوحة إحصائيات الزوار</span></h2>
+
+    <div class="ana-stats-row">
+      <div class="ana-stat"><div class="as-num" id="ana-total-count">—</div><div class="as-lbl" data-ar="إجمالي الزيارات" data-en="Total Visits">إجمالي الزيارات</div></div>
+      <div class="ana-stat"><div class="as-num" id="ana-today-count">—</div><div class="as-lbl" data-ar="جلسات اليوم" data-en="Today's Sessions">جلسات اليوم</div></div>
+      <div class="ana-stat"><div class="as-num" id="ana-country-count">—</div><div class="as-lbl" data-ar="دول مختلفة" data-en="Countries">دول مختلفة</div></div>
+      <div class="ana-stat"><div class="as-num" id="ana-mobile-count">—</div><div class="as-lbl" data-ar="نسبة الموبايل" data-en="Mobile %">نسبة الموبايل</div></div>
+    </div>
+
+    <div class="ana-note">
+      ⚠️ <strong data-ar="تنبيه مهم:" data-en="Important note:">تنبيه مهم:</strong>
+      <span data-ar=" البيانات أدناه مُجمَّعة من هذا المتصفح فقط. للحصول على إحصائيات شاملة من جميع الأجهزة، فعّل Google Analytics (اطّلع على التعليمات أدناه)." data-en=" Data below is collected from this browser only. For full cross-device analytics, enable Google Analytics (see instructions below)."> البيانات أدناه مُجمَّعة من هذا المتصفح فقط. للحصول على إحصائيات شاملة من جميع الأجهزة، فعّل Google Analytics أدناه.</span>
+    </div>
+
+    <div class="ana-tbl-wrap">
+      <table class="ana-tbl">
+        <thead><tr>
+          <th data-ar="التاريخ والوقت" data-en="Date & Time">التاريخ والوقت</th>
+          <th data-ar="البلد" data-en="Country">البلد</th>
+          <th data-ar="المدينة" data-en="City">المدينة</th>
+          <th data-ar="الجهاز" data-en="Device">الجهاز</th>
+          <th data-ar="المتصفح" data-en="Browser">المتصفح</th>
+        </tr></thead>
+        <tbody id="ana-visits-tbody"><tr><td colspan="5" style="text-align:center;color:var(--text3);padding:20px" data-ar="لا توجد بيانات بعد — ستظهر البيانات بعد أول زيارة" data-en="No data yet — data will appear after the first visit">لا توجد بيانات بعد</td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="ana-section">
+      <h3>📤 <span data-ar="إرسال تقرير بالبريد الإلكتروني" data-en="Send Email Report">إرسال تقرير بالبريد الإلكتروني</span></h3>
+      <p style="font-size:13px;color:var(--text3);margin-bottom:10px" data-ar="يُرسل التقرير إلى eng.msamy12@gmail.com ويحتوي على ملخص آخر الزيارات. يُفتح تطبيق البريد بشكل تلقائي." data-en="Sends a report to eng.msamy12@gmail.com with a summary of recent visits. Opens your email client automatically.">يُرسل التقرير إلى eng.msamy12@gmail.com — يُفتح تطبيق البريد تلقائياً.</p>
+      <div class="ana-btn-row">
+        <button class="btn-success" onclick="sendAnalyticsEmailReport()">📧 <span data-ar="إرسال تقرير الآن" data-en="Send Report Now">إرسال تقرير الآن</span></button>
+        <button class="btn-warning" onclick="clearAnalyticsData()">🗑 <span data-ar="مسح البيانات المحلية" data-en="Clear Local Data">مسح البيانات المحلية</span></button>
+      </div>
+    </div>
+
+    <div class="ana-section">
+      <h3>🔔 <span data-ar="إشعارات فورية عبر Make.com (موصى به)" data-en="Instant Notifications via Make.com (Recommended)">إشعارات فورية عبر Make.com</span></h3>
+      <p style="font-size:13px;color:var(--text3);margin-bottom:10px" data-ar="كل زيارة جديدة تُرسل تلقائياً إلى Make.com → ثم إلى بريدك. أنت تعرف Make.com من اليوم الرابع في الكورس!" data-en="Every new visit is automatically sent to Make.com → then to your email. You learned Make.com on Day 4 of the course!">كل زيارة جديدة تُرسل تلقائياً عبر Make.com → إلى بريدك. تعلّمت Make.com في اليوم الرابع!</p>
+      <div class="admin-field"><label data-ar="رابط Make.com Webhook (الصق الرابط من سيناريو Make.com)" data-en="Make.com Webhook URL (paste from your Make.com scenario)">رابط Make.com Webhook</label>
+      <input type="text" id="ana-webhook-url" placeholder="https://hook.eu2.make.com/XXXXXXX" style="font-family:monospace;font-size:12px"></div>
+      <div class="ana-btn-row">
+        <button class="btn-success" onclick="saveWebhookUrl()">💾 <span data-ar="حفظ الرابط وتفعيل الإشعارات" data-en="Save & Enable Notifications">حفظ وتفعيل الإشعارات</span></button>
+        <a class="btn-info" href="https://www.make.com/en/register" target="_blank" rel="noopener">🌐 <span data-ar="فتح Make.com" data-en="Open Make.com">فتح Make.com</span></a>
+      </div>
+      <div id="ana-webhook-status" style="margin-top:8px;font-size:12.5px"></div>
+    </div>
+
+    <div class="ana-section">
+      <h3>📈 <span data-ar="إعداد Google Analytics للإحصائيات الشاملة" data-en="Set Up Google Analytics for Full Analytics">إعداد Google Analytics للإحصائيات الشاملة</span></h3>
+      <p style="font-size:13px;color:var(--text3);margin-bottom:8px" data-ar="Google Analytics يُعطيك: عدد الزوار، البلدان، الأجهزة، مدة الجلسة، ومزيد — من جميع الأجهزة والمتصفحات." data-en="Google Analytics gives you: visitor count, countries, devices, session duration and more — from all devices and browsers.">Google Analytics يُعطيك: الزوار، البلدان، الأجهزة، مدة الجلسة — من جميع الأجهزة والمتصفحات.</p>
+      <div class="admin-field"><label data-ar="معرّف GA4 (Measurement ID)" data-en="GA4 Measurement ID">معرّف GA4 (مثال: G-XXXXXXXXXX)</label>
+      <input type="text" id="ana-ga-id" placeholder="G-XXXXXXXXXX"></div>
+      <div class="ana-btn-row">
+        <button class="btn-success" onclick="saveGaId()">💾 <span data-ar="حفظ معرّف GA4" data-en="Save GA4 ID">حفظ معرّف GA4</span></button>
+        <a class="btn-info" href="https://analytics.google.com" target="_blank" rel="noopener">📊 <span data-ar="فتح لوحة GA4" data-en="Open GA4 Dashboard">فتح لوحة GA4</span></a>
+        <a class="btn-info" href="https://support.google.com/analytics/answer/9304153" target="_blank" rel="noopener">📖 <span data-ar="دليل الإعداد" data-en="Setup Guide">دليل الإعداد</span></a>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:4px">
+      <button class="notes-btn clear" onclick="closeAnalyticsModal()" style="padding:10px 24px">✕ <span data-ar="إغلاق" data-en="Close">إغلاق</span></button>
     </div>
   </div>
 </div>
@@ -1288,7 +1633,7 @@ DAYS.push(
   ]
 }
 );
-/* ===== DAY 13 — Additional Session ===== */
+/* ===== DAY 13 ===== */
 DAYS.push({
   id:'day13',day:'اليوم الثالث عشر',dayNum:'١٣',title:'الأدوات العلمية والتعاون البرمجي',
   subtitle:'أدوات البحث العلمي · التعاون البرمجي · الذكاء الاصطناعي في البحث',
@@ -1300,6 +1645,46 @@ DAYS.push({
   takeaways:['محتوى قيد الإضافة'],
   tips:['يمكن تحديث محتوى هذا اليوم كاملاً عبر لوحة إدارة المحتوى (Decap CMS) دون الحاجة لتعديل الكود'],
   quizzes:[]
+});
+/* ===== DAY 14 — Final Review ===== */
+DAYS.push({
+  id:'day14',day:'اليوم الرابع عشر',dayNum:'١٤',title:'مراجعة نهائية وأفكار مشاريع مربحة',
+  subtitle:'مراجعة الحقيبة الكاملة · استراتيجيات التسييل · مشاريع الذكاء الاصطناعي',
+  date:'5 يونيو 2026',readTime:'20 دقيقة',emoji:'🎯',c1:'#7c3aed',c2:'#db2777',
+  siteKeys:['ChatGPT','Claude','Gemini','Notion','NotebookLM','Canva','Zapier','Lovable','EasyClaw','Fiverr'],
+  overview:'الجلسة الختامية للدفعة الثامنة تجمع كل ما تعلّمناه. يعرض الطلاب مشاريعهم، يراجعون حقيبة الأدوات الكاملة، ويستكشفون ١٠ أفكار مشاريع مربحة يمكنهم بدؤها فوراً بالأدوات التي أتقنوها.',
+  pdfSummary:'تشمل الجلسة الختامية: مراجعة شاملة لـ ٥٠+ أداة في ٩ تخصصات، عروض مشاريع الطلاب، ١٠ أفكار مشاريع مربحة مفصّلة مع تقديرات الدخل، خطة عمل الـ ٣٠ يوم الأولى، منصات العمل الحر وكيفية الحصول على أول عميل، بناء العلامة الشخصية على LinkedIn، وحفل تسليم شهادات الدفعة الثامنة.',
+  points:[
+    'مراجعة شاملة لحقيبة أدوات الذكاء الاصطناعي الكاملة (٥٠+ أداة في ٩ تخصصات)',
+    'عروض مشاريع الطلاب ومراجعة الأقران على Padlet',
+    '١٠ أفكار مشاريع مربحة: من البوتات إلى تطبيقات Vibe Coding وخدمات الترجمة',
+    'استراتيجيات التسييل: العمل الحر، الاستشارات، الخدمات المُنتَجة، والـ SaaS',
+    'كيفية الحصول على أول عميل: التسعير، بناء المعرض، وجمع التقييمات',
+    'بناء علامة شخصية قوية في الذكاء الاصطناعي على LinkedIn',
+    'خطة العمل الشخصية: ماذا تفعل في الـ ٣٠ يوم الأولى بعد الدورة',
+    'منصات العمل الحر: EasyClaw وFiverr وUpwork — أيها تختار ومتى',
+    'مستقبل وظائف الذكاء الاصطناعي والمهارات التي تبقى إنسانية',
+    'حفل ختام الدفعة الثامنة وتسليم شهادات الإتمام'
+  ],
+  takeaways:[
+    'الربح الحقيقي = مهارة واحدة + أداة ذكاء اصطناعي + عميل يحتاجها — ابدأ من هنا',
+    'لا تبدأ بالمثالية — ابدأ بعميل واحد ولو مجاناً لبناء معرضك وتقييماتك',
+    'تخصصك الأصلي + الذكاء الاصطناعي = ميزة تنافسية نادرة قليلون يمتلكونها',
+    'مجتمعك هو أكبر أصولك — ابقَ على تواصل عبر Telegram وLinkedIn',
+    'الذكاء الاصطناعي يتطور يومياً — الـ ٣٠ دقيقة اليومية هي رأس مالك الحقيقي'
+  ],
+  tips:[
+    'ابدأ بسعر منخفض واجمع التقييمات — ثم ارفع أسعارك تدريجياً',
+    'LinkedIn هو أقوى منصة للعملاء B2B — حسّن ملفك الشخصي اليوم',
+    'قاعدة الـ ١٠٠٠ مشجّع: ١٠٠٠ متابع مخلص في تخصص أفضل بكثير من ١٠٠,٠٠٠ عشوائي',
+    'قدّم خدمة مجانية لـ ٣ عملاء مختلفين أولاً للحصول على تقييمات حقيقية',
+    'وثّق كل ما تبنيه — صور، فيديوهات قصيرة، نتائج — هذا هو محتوى التسويق الخاص بك'
+  ],
+  quizzes:[
+    {q:'وفقًا للدورة، ما معادلة الربح الحقيقي من الذكاء الاصطناعي؟',opts:['أدوات كثيرة + معرض ضخم + حظ','مهارة واحدة + أداة ذكاء اصطناعي + عميل يحتاجها','أغلى الأدوات + أكثر المتابعين','انتظار اللحظة المثالية للبدء'],ans:1,exp:'تؤكد الدورة على البدء بتركيز: حدّد مهارة تمتلكها، أداة ذكاء اصطناعي تُضاعفها، وعميلاً يحتاج هذا بالضبط — هذا أسرع طريق للربح الحقيقي.'},
+    {q:'ما الخطوة الأولى الموصى بها للحصول على أول عميل في العمل الحر؟',opts:['شراء اشتراكات مدفوعة في كل الأدوات','تحديد أسعار عالية لتبدو محترفًا','تقديم خدمة مجانية أو تجريبية لـ 2-3 عملاء لبناء التقييمات','انتظار اكتمال المعرض'],ans:2,exp:'توصي الدورة بتقديم خدمة مجانية أو بسعر تمهيدي لعدد قليل من العملاء أولاً — هذا يبني تقييمات حقيقية وقطع معرض حقيقية وثقة حقيقية قبل رفع الأسعار.'},
+    {q:'أي منصة عمل حر في المنطقة العربية تعلّمناها في الكورس لخدمات الذكاء الاصطناعي؟',opts:['Toptal','EasyClaw','99designs','Contra'],ans:1,exp:'EasyClaw هي سوق عمل حر أوصت به الدورة تحديدًا لتقديم الخدمات الرقمية المدعومة بالذكاء الاصطناعي، مع تكامل مباشر مع Telegram للتواصل.'}
+  ]
 });
 </script>
 
@@ -1501,7 +1886,14 @@ day13:{day:'Day 13',title:'Scientific Tools & Programming Collaboration',subtitl
   points:['Day 13 content is pending — please update via the CMS panel'],
   takeaways:['Content pending'],
   tips:['All Day 13 content can be updated via the Decap CMS admin panel without touching the code'],
-  quizzes:[]}
+  quizzes:[]},
+day14:{day:'Day 14',title:'Final Review & Profitable Project Ideas',subtitle:'Complete toolkit review · Monetisation strategies · AI projects',date:'5 June 2026',readTime:'20 min',
+  overview:'The final session of Cohort 8 brings the whole journey together. Students present their portfolio projects, review the full AI toolkit, and explore 10 practical project ideas that can generate real income using the tools they have mastered over 14 days.',
+  pdfSummary:'The closing session covers a complete review of 50+ AI tools across all categories, presentation of student portfolio projects, 10 detailed profitable project ideas with income estimates, personal action plan for the first 30 days after the course, freelancing platforms and how to land the first client, personal AI branding on LinkedIn, and the graduation ceremony for Cohort 8.',
+  points:['Complete review of the 50+ AI tool toolkit across all 9 categories','Student portfolio presentations and peer feedback on Padlet projects','10 profitable project ideas: from chatbots to Vibe Coding apps and translation services','Monetisation strategies: freelancing, consulting, productised services and SaaS','How to land the first client: pricing, portfolio building and testimonials','Building a strong AI personal brand on LinkedIn','The 30-day action plan: what to do in the first month after the course','Freelance platforms: EasyClaw, Fiverr, Upwork, Contra — which to choose and when','The future of AI jobs and skills that remain human','Graduation ceremony and Cohort 8 completion certificates'],
+  takeaways:['Real income = one skill + one AI tool + one client who needs it — start there','Never start with perfection — start with one client, even for free, to build your portfolio','Your existing specialisation + AI = a rare competitive advantage very few people have','Your community is your greatest asset — stay connected via Telegram and LinkedIn','The AI field moves fast — 30 focused minutes daily is your real capital'],
+  tips:['Start with a low price and build reviews — then raise your rates gradually','LinkedIn is the most powerful platform for B2B clients — polish your profile today','The 1,000-fan rule: 1,000 loyal followers in one niche beats 100,000 random followers','Offer a free service to 3 different clients to collect genuine testimonials','Document everything you build — photos, short videos, results — that is your marketing content'],
+  quizzes:[{q:'According to the course, what is the formula for real income from AI?',opts:['Many tools + big portfolio + luck','One skill + one AI tool + one client who needs it','The most expensive tools + most followers','Waiting for the perfect moment to start'],ans:1,exp:'The course emphasises starting focused: identify one skill you have, one AI tool that amplifies it, and one client who needs exactly that — this is the fastest path to real income.'},{q:'What is the recommended first step to landing your first freelance client?',opts:['Buy premium subscriptions to all tools','Set high prices to appear professional','Offer a free or discounted service to 2–3 clients to build testimonials','Wait until you have a perfect portfolio'],ans:2,exp:'The course recommends offering a free or introductory-priced service to a small number of clients first — this builds real testimonials, real portfolio pieces, and real confidence before raising rates.'},{q:'Which freelance platform was covered in the course for AI services in the Arab world?',opts:['Toptal','EasyClaw','99designs','Contra'],ans:1,exp:'EasyClaw is a freelance marketplace that the course specifically recommended for offering AI-powered digital services, with direct Telegram integration for communication.'}]}
 };
 </script>
 
@@ -1990,6 +2382,33 @@ function applyEdits(){
   });
 }
 
+/* ===== VISITOR ANALYTICS (localStorage + ipapi.co) ===== */
+(function trackVisit(){
+  const sessionKey='ai_visit_'+Math.floor(Date.now()/1800000); // new session every 30 min
+  if(sessionStorage.getItem(sessionKey))return;
+  sessionStorage.setItem(sessionKey,'1');
+  const ua=navigator.userAgent;
+  const device=/Mobile|Android|iPhone|iPad/i.test(ua)?'📱 موبايل':'💻 كمبيوتر';
+  const browser=ua.includes('Edg')?'Edge':ua.includes('Chrome')?'Chrome':ua.includes('Firefox')?'Firefox':ua.includes('Safari')?'Safari':'أخرى';
+  const lang=navigator.language||'—';
+  const visit={t:new Date().toLocaleString('ar-EG',{year:'numeric',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}),country:'...',city:'—',device,browser,lang};
+  fetch('https://ipapi.co/json/')
+    .then(r=>r.json()).then(d=>{visit.country=d.country_name||'غير محدد';visit.city=d.city||'—';finalizeVisit(visit);})
+    .catch(()=>{visit.country='غير محدد';finalizeVisit(visit);});
+  function finalizeVisit(v){
+    let visits=[];try{visits=JSON.parse(localStorage.getItem('ai_visits')||'[]');}catch(e){}
+    visits.unshift(v);if(visits.length>200)visits=visits.slice(0,200);
+    localStorage.setItem('ai_visits',JSON.stringify(visits));
+    const cnt=parseInt(localStorage.getItem('ai_visit_count')||'0')+1;
+    localStorage.setItem('ai_visit_count',cnt.toString());
+    // fire Make.com webhook if configured
+    const wh=localStorage.getItem('ai_webhook_url');
+    if(wh&&wh.startsWith('https://')){
+      fetch(wh,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({event:'page_visit',time:v.t,country:v.country,city:v.city,device:v.device,browser:v.browser,site:location.hostname})}).catch(()=>{});
+    }
+  }
+})();
+
 /* ===== CMS CONTENT LOADER (content/videos.json + content/sites.json) ===== */
 window._cmsVideos={};
 async function loadCmsContent(){
@@ -2101,6 +2520,56 @@ function toggleAdminEditMode(){
   if(btn)btn.style.background=on?'':'rgba(59,130,246,.3)';
 }
 // Jump to video panel of current day and open it for adding
+/* ===== ANALYTICS ADMIN ===== */
+function openAnalyticsModal(){
+  document.getElementById('admin-analytics-modal').classList.add('open');
+  renderAnalytics();
+  const saved=localStorage.getItem('ai_webhook_url')||'';
+  if(saved)document.getElementById('ana-webhook-url').value=saved;
+  const ga=localStorage.getItem('ai_ga_id')||'';
+  if(ga)document.getElementById('ana-ga-id').value=ga;
+}
+function closeAnalyticsModal(){document.getElementById('admin-analytics-modal').classList.remove('open');}
+function renderAnalytics(){
+  let visits=[];try{visits=JSON.parse(localStorage.getItem('ai_visits')||'[]');}catch(e){}
+  const total=parseInt(localStorage.getItem('ai_visit_count')||'0');
+  const today=new Date().toLocaleDateString('ar-EG');
+  const todayCnt=visits.filter(v=>v.t&&v.t.includes(today.split('،')[0]||new Date().getDate())).length||visits.filter(v=>v.t&&v.t.includes(String(new Date().getDate()))).length;
+  const countries=[...new Set(visits.map(v=>v.country).filter(c=>c&&c!=='...'&&c!=='غير محدد'))];
+  const mobilePct=visits.length?Math.round(visits.filter(v=>v.device&&v.device.includes('موبايل')).length/visits.length*100):0;
+  document.getElementById('ana-total-count').textContent=total||visits.length||'0';
+  document.getElementById('ana-today-count').textContent=todayCnt||'0';
+  document.getElementById('ana-country-count').textContent=countries.length||'0';
+  document.getElementById('ana-mobile-count').textContent=(mobilePct||'0')+'%';
+  const tb=document.getElementById('ana-visits-tbody');
+  if(!visits.length){tb.innerHTML=`<tr><td colspan="5" style="text-align:center;color:var(--text3);padding:20px">${LANG==='ar'?'لا توجد بيانات بعد — ستظهر بعد أول زيارة':'No data yet — will appear after first visit'}</td></tr>`;return;}
+  tb.innerHTML=visits.slice(0,100).map(v=>`<tr><td style="white-space:nowrap">${v.t||'—'}</td><td>${v.country||'—'}</td><td>${v.city||'—'}</td><td>${v.device||'—'}</td><td>${v.browser||'—'}</td></tr>`).join('');
+}
+function sendAnalyticsEmailReport(){
+  let visits=[];try{visits=JSON.parse(localStorage.getItem('ai_visits')||'[]');}catch(e){}
+  const total=localStorage.getItem('ai_visit_count')||visits.length;
+  const rows=visits.slice(0,30).map(v=>`${v.t||'—'} | ${v.country||'—'} ${v.city||'—'} | ${v.device||'—'} | ${v.browser||'—'}`).join('\n');
+  const body=encodeURIComponent(`تقرير إحصائيات موقع أكاديمية الذكاء الاصطناعي\n================================\nإجمالي الزيارات: ${total}\nتاريخ التقرير: ${new Date().toLocaleString('ar-EG')}\n\nآخر ٣٠ زيارة (من هذا الجهاز):\n${rows}\n\nملاحظة: هذه البيانات من المتصفح الحالي فقط. للإحصائيات الكاملة استخدم Google Analytics.`);
+  window.open(`mailto:eng.msamy12@gmail.com?subject=${encodeURIComponent('تقرير زوار موقع أكاديمية الذكاء الاصطناعي')}&body=${body}`);
+}
+function clearAnalyticsData(){
+  if(!confirm(LANG==='ar'?'هل تريد مسح بيانات الزيارات المحلية؟':'Clear local visit data?'))return;
+  localStorage.removeItem('ai_visits');localStorage.removeItem('ai_visit_count');renderAnalytics();
+}
+function saveWebhookUrl(){
+  const url=document.getElementById('ana-webhook-url').value.trim();
+  if(url&&!url.startsWith('https://')){alert(LANG==='ar'?'الرابط يجب أن يبدأ بـ https://':'URL must start with https://');return;}
+  localStorage.setItem('ai_webhook_url',url);
+  const st=document.getElementById('ana-webhook-status');
+  st.textContent=url?(LANG==='ar'?'✅ تم حفظ الرابط. كل زيارة جديدة ستُرسل تلقائياً إلى Make.com.':'✅ URL saved. Every new visit will be sent to Make.com automatically.'):(LANG==='ar'?'⚠️ تم إلغاء تفعيل الإشعارات.':'⚠️ Notifications disabled.');
+  st.style.color=url?'var(--success)':'var(--warning)';
+}
+function saveGaId(){
+  const id=document.getElementById('ana-ga-id').value.trim();
+  if(id&&!id.startsWith('G-')){alert('معرّف GA4 يجب أن يبدأ بـ G-');return;}
+  localStorage.setItem('ai_ga_id',id);
+  alert(id?'✅ تم حفظ معرّف GA4. أعد تحديث الصفحة لتفعيله.':'تم مسح معرّف GA4.');
+}
 function openAddVideoMode(){
   const dayId=currentSection;
   if(!DAYS.find(d=>d.id===dayId)){alert(LANG==='ar'?'انتقل إلى يوم أولاً':'Navigate to a day first');return;}
@@ -2151,6 +2620,9 @@ function setupEvents(){
   document.getElementById('admin-export-faq').addEventListener('click',exportFaqJson);
   document.getElementById('admin-edit-toggle').addEventListener('click',toggleAdminEditMode);
   document.getElementById('admin-add-video-btn').addEventListener('click',openAddVideoMode);
+  document.getElementById('admin-analytics-btn').addEventListener('click',openAnalyticsModal);
+  document.getElementById('admin-analytics-modal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeAnalyticsModal();});
+  document.querySelector('.sidebar-item[data-target="projects"]').addEventListener('click',()=>navigateTo('projects'));
 
   // restore admin session if still valid
   const storedEnd=parseInt(sessionStorage.getItem('admin_session_end')||'0');
@@ -2170,7 +2642,7 @@ function setupEvents(){
   document.addEventListener('keydown',e=>{
     if(e.ctrlKey&&e.shiftKey&&(e.key==='A'||e.key==='a')){e.preventDefault();if(isAdmin){alert(ui('alreadyAdmin'));}else{showLogin();}}
     if((e.ctrlKey||e.metaKey)&&(e.key==='k'||e.key==='K')){e.preventDefault();const gi=document.getElementById('gsearch-input');gi.focus();gi.select();}
-    if(e.key==='Escape'){closeQuiz();closeToolPopup();closeGlobalSearch();closeAdminSettings();document.getElementById('notes-modal').classList.remove('open');document.getElementById('login-modal').classList.remove('open');}
+    if(e.key==='Escape'){closeQuiz();closeToolPopup();closeGlobalSearch();closeAdminSettings();closeAnalyticsModal();document.getElementById('notes-modal').classList.remove('open');document.getElementById('login-modal').classList.remove('open');}
   });
 }
 
